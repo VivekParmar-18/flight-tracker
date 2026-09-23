@@ -1,6 +1,15 @@
 let priceChartInstance = null;
 let countdownTimer = null;
-let remainingMs = 600000;
+const INTERVAL_MS = 10 * 60 * 1000;
+
+// Universal clock anchor: all users compute against the exact same 10-minute clock boundary
+function computeNextCheckTimestamp() {
+  const now = Date.now();
+  return Math.ceil(now / INTERVAL_MS) * INTERVAL_MS;
+}
+
+let targetNextCheckTimestamp = computeNextCheckTimestamp();
+let serverIsScraping = false;
 
 async function fetchStatus() {
   try {
@@ -26,42 +35,53 @@ function renderDashboard(data) {
     if (stats.avgPrice) document.getElementById('statAverage').textContent = `CA$${Number(stats.avgPrice).toLocaleString()}`;
     if (config.targetPriceCAD) document.getElementById('statTarget').textContent = `CA$${Number(config.targetPriceCAD).toLocaleString()}`;
     
-    if (typeof stats.nextCheckInMs === 'number') {
-      remainingMs = stats.nextCheckInMs;
-      startCountdown();
+    serverIsScraping = !!stats.isScraping;
+    if (stats.nextCheckTimestamp) {
+      targetNextCheckTimestamp = stats.nextCheckTimestamp;
     }
   }
 
-  if (config.targetPriceCAD) {
+  if (config && config.targetPriceCAD) {
     document.getElementById('targetInput').value = config.targetPriceCAD;
   }
 
   document.getElementById('logCount').textContent = `${history.length} Checks Logged`;
 
-  renderChart(history, config.targetPriceCAD);
+  renderChart(history, config?.targetPriceCAD);
   renderTable(history);
+  updateCountdownDisplay();
+}
+
+function updateCountdownDisplay() {
+  const timerEl = document.getElementById('nextCheckTimer');
+  if (!timerEl) return;
+
+  if (serverIsScraping) {
+    timerEl.textContent = 'Scraping live prices...';
+    return;
+  }
+
+  const now = Date.now();
+  let remainingMs = targetNextCheckTimestamp - now;
+
+  // If countdown reached zero, re-anchor to the next 10-minute boundary and trigger a sync fetch
+  if (remainingMs <= 0) {
+    targetNextCheckTimestamp = computeNextCheckTimestamp();
+    remainingMs = Math.max(0, targetNextCheckTimestamp - now);
+    timerEl.textContent = 'Checking now...';
+    setTimeout(fetchStatus, 3000);
+    return;
+  }
+
+  const mins = Math.floor(remainingMs / 60000);
+  const secs = Math.floor((remainingMs % 60000) / 1000);
+  timerEl.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
 }
 
 function startCountdown() {
   if (countdownTimer) clearInterval(countdownTimer);
-
-  function update() {
-    remainingMs = Math.max(0, remainingMs - 1000);
-    const mins = Math.floor(remainingMs / 60000);
-    const secs = Math.floor((remainingMs % 60000) / 1000);
-    const formatted = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-    const timerEl = document.getElementById('nextCheckTimer');
-    if (timerEl) timerEl.textContent = formatted;
-
-    if (remainingMs === 0) {
-      clearInterval(countdownTimer);
-      // Give server a moment to finish scrape then refresh status
-      setTimeout(fetchStatus, 3000);
-    }
-  }
-
-  update();
-  countdownTimer = setInterval(update, 1000);
+  updateCountdownDisplay();
+  countdownTimer = setInterval(updateCountdownDisplay, 1000);
 }
 
 function renderChart(history, targetPrice) {
@@ -230,8 +250,11 @@ document.getElementById('btnSaveTarget').addEventListener('click', async () => {
   }
 });
 
-// Periodic background sync in UI every 30 seconds
-setInterval(fetchStatus, 30000);
+// Start synchronized countdown immediately
+startCountdown();
+
+// Periodic background sync in UI every 15 seconds
+setInterval(fetchStatus, 15000);
 
 // Initial load
 fetchStatus();

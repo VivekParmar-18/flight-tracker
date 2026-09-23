@@ -7,7 +7,7 @@
   "dateTo": "2027-02-06",
   "currency": "CAD",
   "targetPriceCAD": 2000,
-  "scrapeIntervalHours": 4,
+  "scrapeIntervalMinutes": 10,yyy
   "airlineOnly": "Air India",
   "maxStops": 1,
   "avoidCountries": [

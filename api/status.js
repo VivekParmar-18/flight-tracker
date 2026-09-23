@@ -16,7 +16,7 @@ export default function handler(req, res) {
       dateTo: '2027-02-06',
       currency: 'CAD',
       targetPriceCAD: 2000,
-      scrapeIntervalHours: 6
+      scrapeIntervalMinutes: 10
     };
 
     if (fs.existsSync(historyPath)) {
@@ -32,6 +32,11 @@ export default function handler(req, res) {
     const maxPrice = prices.length ? Math.max(...prices) : null;
     const avgPrice = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : null;
 
+    const INTERVAL_MS = 10 * 60 * 1000;
+    const now = Date.now();
+    const nextCheckTimestamp = Math.ceil(now / INTERVAL_MS) * INTERVAL_MS;
+    const remainingMs = Math.max(0, nextCheckTimestamp - now);
+
     res.status(200).json({
       config,
       latest,
@@ -41,7 +46,11 @@ export default function handler(req, res) {
         maxPrice,
         avgPrice,
         totalChecks: history.length,
-        lastChecked: latest ? latest.timestamp : null
+        lastChecked: latest ? latest.timestamp : null,
+        nextCheckTimestamp,
+        nextCheckInMs: remainingMs,
+        intervalMinutes: 10,
+        isScraping: false
       }
     });
   } catch (error) {

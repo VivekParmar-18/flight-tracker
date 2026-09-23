@@ -13,7 +13,14 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 let isScraping = false;
-let nextCheckTime = Date.now() + 10 * 60 * 1000;
+const INTERVAL_MINUTES = 10;
+const INTERVAL_MS = INTERVAL_MINUTES * 60 * 1000;
+
+// Universal clock anchor: All users & server sync to the exact same 10-minute clock boundary
+function getNextCheckTimestamp() {
+  const now = Date.now();
+  return Math.ceil(now / INTERVAL_MS) * INTERVAL_MS;
+}
 
 // API: Get flight tracking status and history
 app.get('/api/status', (req, res) => {
@@ -26,8 +33,14 @@ app.get('/api/status', (req, res) => {
   const maxPrice = prices.length ? Math.max(...prices) : null;
   const avgPrice = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : null;
 
+  const nextCheckTimestamp = getNextCheckTimestamp();
+  const remainingMs = Math.max(0, nextCheckTimestamp - Date.now());
+
   res.json({
-    config,
+    config: {
+      ...config,
+      scrapeIntervalMinutes: INTERVAL_MINUTES
+    },
     latest,
     history,
     stats: {
@@ -36,7 +49,9 @@ app.get('/api/status', (req, res) => {
       avgPrice,
       totalChecks: history.length,
       lastChecked: latest ? latest.timestamp : null,
-      nextCheckInMs: Math.max(0, nextCheckTime - Date.now()),
+      nextCheckTimestamp,
+      nextCheckInMs: remainingMs,
+      intervalMinutes: INTERVAL_MINUTES,
       isScraping
     }
   });
@@ -52,7 +67,6 @@ app.post('/api/check-now', async (req, res) => {
   try {
     const snapshot = await scrapeAirIndiaFlight();
     isScraping = false;
-    nextCheckTime = Date.now() + (loadConfig().scrapeIntervalMinutes || 10) * 60 * 1000;
     res.json({ success: true, snapshot });
   } catch (err) {
     isScraping = false;
@@ -66,45 +80,51 @@ app.post('/api/config', (req, res) => {
   const updated = {
     ...current,
     targetPriceCAD: Number(req.body.targetPriceCAD) || current.targetPriceCAD,
-    scrapeIntervalMinutes: Number(req.body.scrapeIntervalMinutes) || current.scrapeIntervalMinutes || 10
+    scrapeIntervalMinutes: INTERVAL_MINUTES
   };
   saveConfig(updated);
   res.json({ success: true, config: updated });
 });
 
-// Background periodic checker (Every 10 minutes)
-function setupScheduler() {
-  const config = loadConfig();
-  const intervalMinutes = config.scrapeIntervalMinutes || 10;
-  const intervalMs = intervalMinutes * 60 * 1000;
-  nextCheckTime = Date.now() + intervalMs;
-  
-  console.log(`[Auto-Poller] Initialized! Polling every ${intervalMinutes} minutes.`);
+// Background periodic checker (Strictly aligned to 10-minute clock marks)
+let schedulerTimeout = null;
 
-  setInterval(async () => {
-    if (isScraping) return;
-    try {
-      console.log(`\n-----------------------------------------------------------`);
-      console.log(`[10-Min Auto-Poll] Executing scheduled Air India flight scrape...`);
-      isScraping = true;
-      await scrapeAirIndiaFlight();
-      isScraping = false;
-      nextCheckTime = Date.now() + intervalMs;
-      console.log(`[10-Min Auto-Poll] Completed! Next check in ${intervalMinutes} minutes.`);
-      console.log(`-----------------------------------------------------------\n`);
-    } catch (err) {
-      isScraping = false;
-      console.error('[10-Min Auto-Poll] Scrape error:', err.message);
+function scheduleNextSyncScrape() {
+  const nextTarget = getNextCheckTimestamp();
+  // Ensure we wait at least 1.5 seconds if called right at the boundary
+  let delay = nextTarget - Date.now();
+  if (delay <= 1000) delay += INTERVAL_MS;
+
+  console.log(`[Auto-Poller] Synchronized next scrape at ${new Date(nextTarget).toLocaleTimeString()} (in ${(delay / 1000).toFixed(0)}s)`);
+
+  if (schedulerTimeout) clearTimeout(schedulerTimeout);
+
+  schedulerTimeout = setTimeout(async () => {
+    if (!isScraping) {
+      try {
+        console.log(`\n-----------------------------------------------------------`);
+        console.log(`[10-Min Auto-Poll] Executing synchronized scrape at ${new Date().toLocaleTimeString()}...`);
+        isScraping = true;
+        await scrapeAirIndiaFlight();
+        console.log(`[10-Min Auto-Poll] Completed successfully!`);
+        console.log(`-----------------------------------------------------------\n`);
+      } catch (err) {
+        console.error('[10-Min Auto-Poll] Scrape error:', err.message);
+      } finally {
+        isScraping = false;
+      }
     }
-  }, intervalMs);
+    // Schedule next 10-minute boundary
+    scheduleNextSyncScrape();
+  }, delay);
 }
 
 app.listen(PORT, () => {
   console.log(`=======================================================`);
   console.log(`✈️  Air India Flight Tracker Active on http://localhost:${PORT}`);
-  console.log(`🔄 Auto-polling scheduled every 10 minutes.`);
+  console.log(`🔄 Global synchronized polling active: Every 10 minutes.`);
   console.log(`📍 YYZ (Toronto) -> AMD (Ahmedabad) • Jan 10 - Feb 6, 2027`);
-  console.log(`🛡️ 1 Stop (DEL) • 0 US Layovers • 2 Checked Bags`);
+  console.log(`🛡️ 1 Stop (DEL) • 0 US Layovers • 2 Checked Bags Included`);
   console.log(`=======================================================`);
-  setupScheduler();
+  scheduleNextSyncScrape();
 });
