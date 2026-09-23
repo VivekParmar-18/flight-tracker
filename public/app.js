@@ -219,31 +219,25 @@ document.getElementById('btnCheckNow').addEventListener('click', async () => {
   const btn = document.getElementById('btnCheckNow');
   const originalText = btn.innerHTML;
   btn.disabled = true;
-  btn.innerHTML = `<span class="btn-icon">⏳</span> Checking Google Flights Live...`;
+  btn.innerHTML = `<span class="btn-icon">⏳</span> Checking Live Price...`;
 
   try {
     const res = await fetch('/api/check-now', { method: 'POST' });
-    const text = await res.text();
-    let data;
-    try {
-      data = JSON.parse(text);
-    } catch (e) {
-      data = { error: text.replace(/<[^>]*>?/gm, '').trim() || 'Unexpected server response' };
-    }
-
-    if (data.error) {
-      alert(`Notice: ${data.error}`);
+    const data = await res.json();
+    if (data.snapshot && data.snapshot.priceCAD) {
+      btn.innerHTML = `<span class="btn-icon">✓</span> Live: CA$${Number(data.snapshot.priceCAD).toLocaleString()}`;
     } else {
-      if (data.message) {
-        alert(data.message);
-      }
-      await fetchStatus();
+      btn.innerHTML = `<span class="btn-icon">✓</span> Live Price Checked!`;
     }
+    await fetchStatus();
   } catch (err) {
-    alert(`Scrape error: ${err.message}`);
+    console.error('Check price error:', err);
+    btn.innerHTML = `<span class="btn-icon">↻</span> Try Again`;
   } finally {
-    btn.disabled = false;
-    btn.innerHTML = originalText;
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.innerHTML = originalText;
+    }, 2500);
   }
 });
 
@@ -257,19 +251,15 @@ document.getElementById('btnSaveTarget').addEventListener('click', async () => {
     });
     const data = await res.json();
     if (data.success) {
-      alert(`Target alert threshold saved: CA$${targetVal}`);
       fetchStatus();
     }
   } catch (err) {
-    alert('Failed to save target price: ' + err.message);
+    console.error('Failed to save target price:', err);
   }
 });
 
-// Start synchronized countdown immediately
+// Start synchronized countdown
 startCountdown();
 
-// Periodic background sync in UI every 15 seconds
-setInterval(fetchStatus, 15000);
-
-// Initial load
+// Initial load (no continuous 15s spam)
 fetchStatus();
