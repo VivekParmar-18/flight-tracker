@@ -1,0 +1,21 @@
+{
+  "origin": "YYZ",
+  "originCity": "Toronto",
+  "destination": "AMD",
+  "destinationCity": "Ahmedabad",
+  "dateFrom": "2027-01-10",
+  "dateTo": "2027-02-06",
+  "currency": "CAD",
+  "targetPriceCAD": 2000,
+  "scrapeIntervalHours": 4,
+  "airlineOnly": "Air India",
+  "maxStops": 1,
+  "avoidCountries": [
+    "US",
+    "USA",
+    "United States"
+  ],
+  "checkedBagsIncluded": 2,
+  "bagWeightKg": 23,
+  "refundableOption": "Economy Flex (approx. +$180 - $250 CAD)"
+}

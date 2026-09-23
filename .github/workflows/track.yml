@@ -1,0 +1,41 @@
+name: Daily Air India Flight Tracker
+
+on:
+  schedule:
+    # Runs 4 times a day (every 6 hours: 00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 0,6,12,18 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  track-flight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright Chromium & system dependencies
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Air India Flight Scraper
+        run: node tracker.js
+
+      - name: Commit & push updated flight history
+        run: |
+          git config user.name "Flight Tracker Bot"
+          git config user.email "bot@flighttracker.local"
+          git add flight_history.json
+          git diff --staged --quiet || (git commit -m "chore(tracker): update flight price snapshot [skip ci]" && git push)
