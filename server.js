@@ -16,6 +16,14 @@ let isScraping = false;
 const INTERVAL_MINUTES = 10;
 const INTERVAL_MS = INTERVAL_MINUTES * 60 * 1000;
 
+// Prevent server crash from transient unhandled async errors
+process.on('uncaughtException', (err) => {
+  console.error('[Server Guard] Caught exception:', err.message);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('[Server Guard] Unhandled rejection:', reason);
+});
+
 // Universal clock anchor: All users & server sync to the exact same 10-minute clock boundary
 function getNextCheckTimestamp() {
   const now = Date.now();

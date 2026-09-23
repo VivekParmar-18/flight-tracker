@@ -28,6 +28,11 @@ function renderDashboard(data) {
     document.getElementById('currentPrice').textContent = Number(latest.priceCAD).toLocaleString();
     const dateObj = new Date(latest.timestamp);
     document.getElementById('lastUpdatedTag').textContent = `Last Checked: ${dateObj.toLocaleDateString()} ${dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}`;
+
+    const bookBtn = document.getElementById('btnBookAirIndia');
+    if (bookBtn) {
+      bookBtn.href = latest.bookingUrl || 'https://www.airindia.com/in/en/google-flight-booking.html?or=YYZ&de=AMD&on=202701101115&re=202702060820&ad=1&ch=0&in=0&tr=R&cc=ECONOMY&po=CA';
+    }
   }
 
   if (stats) {
@@ -203,7 +208,7 @@ function renderTable(history) {
       <td><span class="badge-pill">${item.stops === 1 ? '1 Stop (DEL)' : item.stops + ' stops'}</span></td>
       <td>${item.checkedBags || '2 Bags (23kg)'}</td>
       <td class="fare-cell">CA$${Number(item.priceCAD).toLocaleString()}</td>
-      <td><span class="status-badge">Available</span></td>
+      <td><a href="${item.bookingUrl || 'https://www.airindia.com/in/en/google-flight-booking.html?or=YYZ&de=AMD&on=202701101115&re=202702060820&ad=1&ch=0&in=0&tr=R&cc=ECONOMY&po=CA'}" target="_blank" class="status-badge" style="text-decoration:none;cursor:pointer;color:#00e5ff;border-color:rgba(0,229,255,0.4)">Book ↗</a></td>
     `;
     tbody.appendChild(tr);
   });
@@ -218,10 +223,20 @@ document.getElementById('btnCheckNow').addEventListener('click', async () => {
 
   try {
     const res = await fetch('/api/check-now', { method: 'POST' });
-    const data = await res.json();
+    const text = await res.text();
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch (e) {
+      data = { error: text.replace(/<[^>]*>?/gm, '').trim() || 'Unexpected server response' };
+    }
+
     if (data.error) {
-      alert(`Scrape Notice: ${data.error}`);
+      alert(`Notice: ${data.error}`);
     } else {
+      if (data.message) {
+        alert(data.message);
+      }
       await fetchStatus();
     }
   } catch (err) {

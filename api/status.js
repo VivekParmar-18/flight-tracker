@@ -1,11 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   try {
-    const historyPath = path.join(process.cwd(), 'flight_history.json');
-    const configPath = path.join(process.cwd(), 'config.json');
-
     let history = [];
     let config = {
       origin: 'YYZ',
@@ -19,11 +16,32 @@ export default function handler(req, res) {
       scrapeIntervalMinutes: 10
     };
 
-    if (fs.existsSync(historyPath)) {
-      history = JSON.parse(fs.readFileSync(historyPath, 'utf8'));
+    // 1. Try fetching latest cloud history directly from GitHub raw (bypasses build cache)
+    try {
+      const rawUrl = `https://raw.githubusercontent.com/VivekParmar-18/flight-tracker/main/flight_history.json?t=${Date.now()}`;
+      const rawRes = await fetch(rawUrl, { cache: 'no-store' });
+      if (rawRes.ok) {
+        history = await rawRes.json();
+      }
+    } catch (netErr) {
+      // Fallback to local file if offline or network error
     }
+
+    // 2. Fallback to local files if GitHub raw was empty
+    if (!history.length) {
+      const historyPath = path.join(process.cwd(), 'flight_history.json');
+      if (fs.existsSync(historyPath)) {
+        try {
+          history = JSON.parse(fs.readFileSync(historyPath, 'utf8'));
+        } catch (e) {}
+      }
+    }
+
+    const configPath = path.join(process.cwd(), 'config.json');
     if (fs.existsSync(configPath)) {
-      config = { ...config, ...JSON.parse(fs.readFileSync(configPath, 'utf8')) };
+      try {
+        config = { ...config, ...JSON.parse(fs.readFileSync(configPath, 'utf8')) };
+      } catch (e) {}
     }
 
     const latest = history[history.length - 1] || null;
