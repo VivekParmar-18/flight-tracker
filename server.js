@@ -1,7 +1,9 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { loadConfig, saveConfig, loadHistory, saveHistory, scrapeAirIndiaFlight } from './tracker.js';
+import { loadConfig, saveConfig, loadHistory, loadLatest, runCheck } from './tracker.js';
+import { buildStatus } from './lib/core.js';
+import { resolveBookingLink, decodeItinerary, googleBookingUrl, googleSearchUrl } from './lib/googleFlights.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,9 +14,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-let isScraping = false;
-const INTERVAL_MINUTES = 10;
-const INTERVAL_MS = INTERVAL_MINUTES * 60 * 1000;
+let currentCheck = null; // in-flight search promise, shared by the poller and "Check now"
 
 // Prevent server crash from transient unhandled async errors
 process.on('uncaughtException', (err) => {
@@ -24,115 +24,96 @@ process.on('unhandledRejection', (reason) => {
   console.error('[Server Guard] Unhandled rejection:', reason);
 });
 
-// Universal clock anchor: All users & server sync to the exact same 10-minute clock boundary
-function getNextCheckTimestamp() {
-  const now = Date.now();
-  return Math.ceil(now / INTERVAL_MS) * INTERVAL_MS;
+function checkNow() {
+  if (!currentCheck) {
+    currentCheck = runCheck().finally(() => { currentCheck = null; });
+  }
+  return currentCheck;
 }
 
-// API: Get flight tracking status and history
+const status = () => buildStatus({
+  config: loadConfig(),
+  latest: loadLatest(),
+  history: loadHistory(),
+  isScraping: !!currentCheck,
+  mode: 'server'
+});
+
+// API: flight tracking status, latest live results and history
 app.get('/api/status', (req, res) => {
-  const config = loadConfig();
-  const history = loadHistory();
-  const latest = history[history.length - 1] || null;
-
-  const prices = history.map(h => h.priceCAD).filter(p => typeof p === 'number');
-  const minPrice = prices.length ? Math.min(...prices) : null;
-  const maxPrice = prices.length ? Math.max(...prices) : null;
-  const avgPrice = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : null;
-
-  const nextCheckTimestamp = getNextCheckTimestamp();
-  const remainingMs = Math.max(0, nextCheckTimestamp - Date.now());
-
-  res.json({
-    config: {
-      ...config,
-      scrapeIntervalMinutes: INTERVAL_MINUTES
-    },
-    latest,
-    history,
-    stats: {
-      minPrice,
-      maxPrice,
-      avgPrice,
-      totalChecks: history.length,
-      lastChecked: latest ? latest.timestamp : null,
-      nextCheckTimestamp,
-      nextCheckInMs: remainingMs,
-      intervalMinutes: INTERVAL_MINUTES,
-      isScraping
-    }
-  });
+  res.json(status());
 });
 
-// API: Trigger immediate live scrape
+// API: run a live search right now (joins the one in progress, if any)
 app.post('/api/check-now', async (req, res) => {
-  if (isScraping) {
-    return res.status(429).json({ error: 'A flight scrape is already in progress. Please wait a moment.' });
-  }
-
-  isScraping = true;
   try {
-    const snapshot = await scrapeAirIndiaFlight();
-    isScraping = false;
-    res.json({ success: true, snapshot });
+    await checkNow();
+    res.json({ success: true, ...status() });
   } catch (err) {
-    isScraping = false;
-    res.status(500).json({ error: err.message });
+    res.status(502).json({ error: `Live search failed: ${err.message}` });
   }
 });
 
-// API: Update target alert configuration
+// API: redirect to the airline's (or cheapest seller's) booking page for an exact itinerary
+app.get('/api/book', async (req, res) => {
+  const config = loadConfig();
+  let itinerary;
+  try {
+    itinerary = decodeItinerary(req.query.t);
+  } catch {
+    return res.redirect(302, googleSearchUrl(config));
+  }
+  try {
+    const link = await resolveBookingLink(config, itinerary.outbound, itinerary.inbound, {
+      prefer: req.query.prefer === 'cheapest' ? 'cheapest' : 'direct'
+    });
+    res.redirect(302, link?.url || googleBookingUrl(config, itinerary.outbound, itinerary.inbound));
+  } catch (err) {
+    console.error('[Book] Falling back to Google Flights:', err.message);
+    res.redirect(302, googleBookingUrl(config, itinerary.outbound, itinerary.inbound));
+  }
+});
+
+// API: update target alert price
 app.post('/api/config', (req, res) => {
   const current = loadConfig();
-  const updated = {
-    ...current,
-    targetPriceCAD: Number(req.body.targetPriceCAD) || current.targetPriceCAD,
-    scrapeIntervalMinutes: INTERVAL_MINUTES
-  };
+  const target = Number(req.body.targetPriceCAD);
+  const updated = { ...current, targetPriceCAD: target > 0 ? target : current.targetPriceCAD };
   saveConfig(updated);
   res.json({ success: true, config: updated });
 });
 
-// Background periodic checker (Strictly aligned to 10-minute clock marks)
-let schedulerTimeout = null;
-
-function scheduleNextSyncScrape() {
-  const nextTarget = getNextCheckTimestamp();
-  // Ensure we wait at least 1.5 seconds if called right at the boundary
+// Background poller aligned to the interval clock boundary (e.g. :00, :10, :20 ...)
+function scheduleNextCheck() {
+  const intervalMs = (loadConfig().scrapeIntervalMinutes || 10) * 60 * 1000;
+  const nextTarget = Math.ceil(Date.now() / intervalMs) * intervalMs;
   let delay = nextTarget - Date.now();
-  if (delay <= 1000) delay += INTERVAL_MS;
+  if (delay <= 1000) delay += intervalMs;
 
-  console.log(`[Auto-Poller] Synchronized next scrape at ${new Date(nextTarget).toLocaleTimeString()} (in ${(delay / 1000).toFixed(0)}s)`);
-
-  if (schedulerTimeout) clearTimeout(schedulerTimeout);
-
-  schedulerTimeout = setTimeout(async () => {
-    if (!isScraping) {
-      try {
-        console.log(`\n-----------------------------------------------------------`);
-        console.log(`[10-Min Auto-Poll] Executing synchronized scrape at ${new Date().toLocaleTimeString()}...`);
-        isScraping = true;
-        await scrapeAirIndiaFlight();
-        console.log(`[10-Min Auto-Poll] Completed successfully!`);
-        console.log(`-----------------------------------------------------------\n`);
-      } catch (err) {
-        console.error('[10-Min Auto-Poll] Scrape error:', err.message);
-      } finally {
-        isScraping = false;
-      }
+  console.log(`[Auto-Poller] Next live search at ${new Date(Date.now() + delay).toLocaleTimeString()}`);
+  setTimeout(async () => {
+    try {
+      await checkNow();
+    } catch (err) {
+      console.error('[Auto-Poller] Search failed:', err.message);
     }
-    // Schedule next 10-minute boundary
-    scheduleNextSyncScrape();
+    scheduleNextCheck();
   }, delay);
 }
 
 app.listen(PORT, () => {
+  const config = loadConfig();
   console.log(`=======================================================`);
-  console.log(`✈️  Air India Flight Tracker Active on http://localhost:${PORT}`);
-  console.log(`🔄 Global synchronized polling active: Every 10 minutes.`);
-  console.log(`📍 YYZ (Toronto) -> AMD (Ahmedabad) • Jan 10 - Feb 6, 2027`);
-  console.log(`🛡️ 1 Stop (DEL) • 0 US Layovers • 2 Checked Bags Included`);
+  console.log(`✈️  Flight Tracker running on http://localhost:${PORT}`);
+  console.log(`📍 ${config.origin} -> ${config.destination} • ${config.dateFrom} / ${config.dateTo}`);
+  console.log(`🛡️ Max ${config.maxStops} stop • No US layovers • ${config.checkedBagsIncluded} checked bags`);
   console.log(`=======================================================`);
-  scheduleNextSyncScrape();
+
+  // Get fresh data immediately if what we have on disk is stale
+  const latest = loadLatest();
+  const intervalMs = (config.scrapeIntervalMinutes || 10) * 60 * 1000;
+  if (!latest || Date.now() - Date.parse(latest.timestamp) > intervalMs) {
+    checkNow().catch(err => console.error('[Startup] Search failed:', err.message));
+  }
+  scheduleNextCheck();
 });

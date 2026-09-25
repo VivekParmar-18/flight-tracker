@@ -8,14 +8,10 @@
   "currency": "CAD",
   "targetPriceCAD": 2000,
   "scrapeIntervalMinutes": 10,
-  "airlineOnly": "Air India",
+  "airlines": [],
   "maxStops": 1,
-  "avoidCountries": [
-    "US",
-    "USA",
-    "United States"
-  ],
+  "avoidCountries": ["US"],
   "checkedBagsIncluded": 2,
-  "bagWeightKg": 23,
-  "refundableOption": "Economy Flex (approx. +$180 - $250 CAD)"
+  "maxOptions": 10,
+  "maxLayoverHours": null
 }

@@ -1,4 +1,10 @@
 {
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 60,
+      "includeFiles": "{config.json,flight_history.json,latest_snapshot.json}"
+    }
+  },
   "rewrites": [
     {
       "source": "/api/:path*",

@@ -3,98 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Air India Flight Tracker — Toronto to Ahmedabad</title>
+  <title>Flight Tracker — Toronto to Ahmedabad</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <div class="background-decor"></div>
-  
+
   <header class="header">
     <div class="header-container">
       <div class="brand">
         <div class="brand-top-row">
-          <span class="brand-badge">Air India Tracker</span>
+          <span class="brand-badge">Live Flight Tracker</span>
           <span class="pulse-container">
             <span class="pulse-dot"></span>
-            <span id="autoPollStatus" class="pulse-text">Auto-polling every 10 min (Next check: <span id="nextCheckTimer">--:--</span>)</span>
+            <span id="autoPollStatus" class="pulse-text">Live Google Flights prices • Next check: <span id="nextCheckTimer">--:--</span></span>
           </span>
         </div>
-        <h1>Toronto <span class="arrow">⇄</span> Ahmedabad</h1>
-        <p class="subtitle">Sun, Jan 10, 2027 – Sat, Feb 6, 2027 • Round-Trip 1-Stop via Delhi</p>
+        <h1><span id="routeFrom">Toronto</span> <span class="arrow">⇄</span> <span id="routeTo">Ahmedabad</span></h1>
+        <p class="subtitle" id="routeSubtitle">Loading trip details…</p>
       </div>
       <div class="header-actions">
         <button id="btnCheckNow" class="btn btn-primary">
-          <span class="btn-icon">↻</span> Check Live Price Now
+          <span class="btn-icon">↻</span> Check Live Prices Now
         </button>
-        <a id="btnBookAirIndia" href="https://www.airindia.com/in/en/google-flight-booking.html?or=YYZ&de=AMD&on=202701101115&re=202702060820&ad=1&ch=0&in=0&tr=R&cc=ECONOMY&po=CA" target="_blank" class="btn btn-gold">
-          Book on Air India ↗
+        <a id="btnBookBest" href="#" target="_blank" rel="noopener" class="btn btn-gold is-disabled">
+          Book Best Deal ↗
         </a>
       </div>
     </div>
   </header>
 
   <main class="main-container">
-    <!-- Constraints & Guarantees Bar -->
-    <section class="badges-row">
-      <div class="badge-card badge-success">
-        <span class="badge-icon">🛡️</span>
-        <div>
-          <strong>0 US Layovers</strong>
-          <p>Transits Delhi (DEL) only — No US visa/ESTA needed</p>
-        </div>
-      </div>
-      <div class="badge-card badge-success">
-        <span class="badge-icon">✈️</span>
-        <div>
-          <strong>Single Ticket (No Self-Transfer)</strong>
-          <p>Luggage checked through to AMD; protected connection</p>
-        </div>
-      </div>
-      <div class="badge-card badge-gold">
-        <span class="badge-icon">🧳</span>
-        <div>
-          <strong>2 Checked Bags Included</strong>
-          <p>2 x 23 kg (50 lbs) per passenger + 1 carry-on (7 kg)</p>
-        </div>
-      </div>
-      <div class="badge-card badge-info">
-        <span class="badge-icon">🔄</span>
-        <div>
-          <strong>Refundable Option</strong>
-          <p>Economy Flex available on Air India for full refund</p>
-        </div>
-      </div>
-    </section>
+    <div id="errorBanner" class="error-banner" hidden></div>
+
+    <!-- Search criteria -->
+    <section class="badges-row" id="criteriaRow"></section>
 
     <!-- Price Overview & Target Alert -->
     <section class="grid-two-col">
       <div class="card price-hero-card">
         <div class="card-header">
-          <span class="card-label">CURRENT BEST FARE (ROUND TRIP)</span>
-          <span id="lastUpdatedTag" class="timestamp-tag">Checking...</span>
+          <span class="card-label">BEST MATCHING FARE (ROUND TRIP, 1 ADULT)</span>
+          <span id="lastUpdatedTag" class="timestamp-tag">Checking…</span>
         </div>
         <div class="price-display">
           <span class="currency-symbol">CA$</span>
-          <span id="currentPrice" class="price-large">2,553</span>
-          <span class="price-unit">total economy fare</span>
+          <span id="currentPrice" class="price-large">—</span>
+          <span id="priceChange" class="price-change"></span>
         </div>
-        
+        <p id="bestSummary" class="best-summary">Searching live fares…</p>
+
+        <div id="targetAlert" class="target-alert" hidden></div>
+
         <div class="price-stats-grid">
           <div class="stat-item">
             <span class="stat-label">Lowest Recorded</span>
-            <span id="statLowest" class="stat-val text-green">CA$2,553</span>
+            <span id="statLowest" class="stat-val text-green">—</span>
           </div>
           <div class="stat-item">
-            <span class="stat-label">Average Fare</span>
-            <span id="statAverage" class="stat-val">CA$2,553</span>
+            <span class="stat-label">Average</span>
+            <span id="statAverage" class="stat-val">—</span>
           </div>
           <div class="stat-item">
             <span class="stat-label">Target Alert</span>
-            <span id="statTarget" class="stat-val text-gold">CA$2,400</span>
+            <span id="statTarget" class="stat-val text-gold">—</span>
           </div>
         </div>
 
@@ -102,186 +78,74 @@
           <label for="targetInput">Set Price Drop Alert:</label>
           <div class="input-group">
             <span class="input-prefix">CA$</span>
-            <input type="number" id="targetInput" value="2400" min="1500" max="4000" step="50">
+            <input type="number" id="targetInput" min="500" max="10000" step="50">
             <button id="btnSaveTarget" class="btn btn-sm btn-secondary">Save Target</button>
           </div>
         </div>
       </div>
 
-      <!-- Price History Trend Chart -->
       <div class="card chart-card">
         <div class="card-header">
-          <span class="card-label">PRICE HISTORY & EVOLUTION</span>
-          <span class="badge-pill">Live 10-Min Log</span>
+          <span class="card-label">BEST FARE OVER TIME</span>
+          <span id="logCount" class="badge-pill">0 checks</span>
         </div>
         <div class="chart-container">
           <canvas id="priceChart"></canvas>
+          <p id="chartEmpty" class="chart-empty" hidden>The chart fills in as live checks are logged.</p>
         </div>
       </div>
     </section>
 
-    <!-- Flight Itinerary Details -->
-    <section class="itinerary-section">
-      <h2 class="section-title">Verified Itinerary Breakdown</h2>
-      
-      <div class="itinerary-grid">
-        <!-- Outbound Card -->
-        <div class="card flight-card">
-          <div class="flight-card-header outbound-header">
-            <div>
-              <span class="flight-type-badge">OUTBOUND FLIGHT</span>
-              <h3>Toronto (YYZ) → Ahmedabad (AMD)</h3>
-              <p class="flight-date">Sunday, January 10, 2027 • Total Duration: 20 hr 35 min</p>
-            </div>
-            <div class="stop-pill">1 Stop (DEL)</div>
-          </div>
-          
-          <div class="flight-leg">
-            <div class="leg-icon">🛫</div>
-            <div class="leg-details">
-              <div class="leg-time-row">
-                <span class="time">11:15 AM</span>
-                <span class="airport-code">YYZ (Toronto Pearson)</span>
-              </div>
-              <div class="flight-meta">
-                <span class="flight-number">AI 188</span> • Boeing 787-8 Dreamliner • Nonstop Transatlantic (15h 45m)
-              </div>
-              <div class="leg-time-row">
-                <span class="time">1:30 PM <small>(+1 day)</small></span>
-                <span class="airport-code">DEL (New Delhi Indira Gandhi)</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="layover-box">
-            <span class="layover-icon">⏱️</span>
-            <span><strong>3 hr 10 min Layover</strong> in Delhi (DEL) • Easy domestic connection • Luggage transferred</span>
-          </div>
-
-          <div class="flight-leg">
-            <div class="leg-icon">🛬</div>
-            <div class="leg-details">
-              <div class="leg-time-row">
-                <span class="time">4:40 PM <small>(+1 day)</small></span>
-                <span class="airport-code">DEL (New Delhi Indira Gandhi)</span>
-              </div>
-              <div class="flight-meta">
-                <span class="flight-number">AI 1120</span> • Airbus A320neo • Domestic Leg (1h 40m)
-              </div>
-              <div class="leg-time-row">
-                <span class="time">6:20 PM <small>(+1 day)</small></span>
-                <span class="airport-code">AMD (Ahmedabad Sardar Vallabhbhai Patel)</span>
-              </div>
-            </div>
-          </div>
+    <!-- All matching flights -->
+    <section>
+      <div class="section-header">
+        <h2 class="section-title">Flights matching your criteria <span id="optionCount" class="badge-pill">0</span></h2>
+        <div class="toolbar">
+          <div id="airlineFilters" class="chip-row"></div>
+          <select id="sortSelect" class="select" aria-label="Sort flights">
+            <option value="price">Cheapest first</option>
+            <option value="duration">Shortest first</option>
+            <option value="direct">Cheapest direct with airline</option>
+          </select>
         </div>
-
-        <!-- Inbound Card -->
-        <div class="card flight-card">
-          <div class="flight-card-header inbound-header">
-            <div>
-              <span class="flight-type-badge">RETURN FLIGHT</span>
-              <h3>Ahmedabad (AMD) → Toronto (YYZ)</h3>
-              <p class="flight-date">Saturday, February 6, 2027 • Total Duration: 21 hr 50 min</p>
-            </div>
-            <div class="stop-pill">1 Stop (DEL)</div>
-          </div>
-          
-          <div class="flight-leg">
-            <div class="leg-icon">🛫</div>
-            <div class="leg-details">
-              <div class="leg-time-row">
-                <span class="time">8:20 PM</span>
-                <span class="airport-code">AMD (Ahmedabad Sardar Vallabhbhai Patel)</span>
-              </div>
-              <div class="flight-meta">
-                <span class="flight-number">AI 1121</span> • Airbus A321 • Domestic Leg (1h 45m)
-              </div>
-              <div class="leg-time-row">
-                <span class="time">10:05 PM</span>
-                <span class="airport-code">DEL (New Delhi Indira Gandhi)</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="layover-box">
-            <span class="layover-icon">⏱️</span>
-            <span><strong>2 hr 20 min Layover</strong> in Delhi (DEL) • International departure terminal transition</span>
-          </div>
-
-          <div class="flight-leg">
-            <div class="leg-icon">🛬</div>
-            <div class="leg-details">
-              <div class="leg-time-row">
-                <span class="time">12:25 AM <small>(+1 day)</small></span>
-                <span class="airport-code">DEL (New Delhi Indira Gandhi)</span>
-              </div>
-              <div class="flight-meta">
-                <span class="flight-number">AI 187</span> • Boeing 787-8 Dreamliner • Nonstop Transatlantic (17h 45m)
-              </div>
-              <div class="leg-time-row">
-                <span class="time">7:40 AM <small>(+1 day)</small></span>
-                <span class="airport-code">YYZ (Toronto Pearson)</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div id="optionsList" class="options-list">
+        <div class="card empty-card">Searching live fares on Google Flights…</div>
       </div>
     </section>
 
-    <!-- Baggage and Fare Rules Card -->
-    <section class="card policy-card">
-      <h3 class="card-label">BAGGAGE ALLOWANCE & REFUND POLICY DETAILS</h3>
-      <div class="policy-grid">
-        <div class="policy-item">
-          <h4>🧳 Checked Baggage</h4>
-          <p><strong>2 pieces free</strong> per passenger. Each bag up to <strong>23 kg (50 lbs)</strong> with maximum dimensions of 158 cm (62 in) linear.</p>
-        </div>
-        <div class="policy-item">
-          <h4>🎒 Cabin Baggage</h4>
-          <p><strong>1 free carry-on bag (up to 7 kg)</strong> + 1 personal item (laptop bag, handbag, or small backpack).</p>
-        </div>
-        <div class="policy-item">
-          <h4>💵 Refundable Ticket Rules</h4>
-          <p>The standard displayed price is <strong>Economy Value</strong>. To get a fully refundable ticket, select <strong>Economy Flex</strong> during checkout on Air India's website (allows full refund with standard minimal cancellation fee prior to departure).</p>
-        </div>
-        <div class="policy-item">
-          <h4>🛂 Transit Visa Status</h4>
-          <p><strong>No US or European transit visa required</strong>. Because the connection is in New Delhi (DEL), Canadian citizens or Indian passport holders need zero intermediate visas.</p>
-        </div>
-      </div>
+    <!-- Matching itineraries without a published fare -->
+    <section id="unpricedSection" hidden>
+      <h2 class="section-title">Also on this route — no fare published on Google Flights</h2>
+      <p class="section-note">These itineraries fit your criteria, but the airline doesn't publish a price for them on Google Flights. Check the airline's own website for the current fare.</p>
+      <div id="unpricedList" class="unpriced-list"></div>
     </section>
 
     <!-- History Log Table -->
     <section class="card table-card">
       <div class="card-header">
-        <span class="card-label">PRICE LOG ARCHIVE</span>
-        <span id="logCount" class="badge-pill">0 Checks</span>
+        <span class="card-label">PRICE LOG</span>
+        <span id="logCount2" class="badge-pill">0 checks</span>
       </div>
       <div class="table-container">
         <table class="history-table">
           <thead>
             <tr>
-              <th>Timestamp</th>
+              <th>Checked</th>
+              <th>Best fare</th>
               <th>Airline</th>
-              <th>Route</th>
-              <th>Outbound / Inbound</th>
-              <th>Stops</th>
-              <th>Baggage</th>
-              <th>Fare (CAD)</th>
-              <th>Status</th>
+              <th>Seller</th>
+              <th>Matching flights</th>
             </tr>
           </thead>
-          <tbody id="historyTableBody">
-            <!-- Dynamically populated -->
-          </tbody>
+          <tbody id="historyTableBody"></tbody>
         </table>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Air India Custom Flight Tracker • 100% Free Self-Hosted • Polling every 10 min • Running on Port 3000</p>
+    <p>Prices are live from Google Flights (CAD, taxes included, 1 adult, economy). Always confirm the final fare and baggage on the booking page.</p>
   </footer>
 
   <script src="app.js"></script>

@@ -1,0 +1,1397 @@
+{
+  "id": "1790318414659",
+  "timestamp": "2026-09-25T06:40:14.659Z",
+  "source": "Google Flights (live)",
+  "route": {
+    "origin": "YYZ",
+    "originCity": "Toronto",
+    "destination": "AMD",
+    "destinationCity": "Ahmedabad",
+    "dateFrom": "2027-01-10",
+    "dateTo": "2027-02-06",
+    "currency": "CAD"
+  },
+  "bestPrice": 2837,
+  "best": {
+    "id": "EK242-EK538_EK541-EK241",
+    "airlines": [
+      "Emirates"
+    ],
+    "price": 2837,
+    "seller": "Justfly.com"
+  },
+  "options": [
+    {
+      "id": "EK242-EK538_EK541-EK241",
+      "airlines": [
+        "Emirates"
+      ],
+      "price": 2837,
+      "checkedBags": 2,
+      "bagsVerified": true,
+      "cheapest": {
+        "seller": "Justfly.com",
+        "fare": null,
+        "price": 2837,
+        "isAirline": false,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "direct": {
+        "seller": "Emirates",
+        "fare": null,
+        "price": 2900,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "refundable": null,
+      "outbound": {
+        "key": "EK242-EK538",
+        "airlines": [
+          "Emirates"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "1:55 PM",
+        "arriveDate": "2027-01-12",
+        "arriveTime": "2:55 AM",
+        "arriveDayOffset": 2,
+        "durationMin": 1590,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 670,
+            "airport": "DXB",
+            "airportName": "Dubai International Airport",
+            "city": "Dubai"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "DXB",
+            "toName": "Dubai International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "1:55 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "11:40 AM",
+            "durationMin": 765,
+            "aircraft": "Airbus A380",
+            "airline": "EK",
+            "airlineName": "Emirates",
+            "flightNumber": "242"
+          },
+          {
+            "from": "DXB",
+            "fromName": "Dubai International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-11",
+            "departTime": "10:50 PM",
+            "arriveDate": "2027-01-12",
+            "arriveTime": "2:55 AM",
+            "durationMin": 155,
+            "aircraft": "Airbus A350",
+            "airline": "EK",
+            "airlineName": "Emirates",
+            "flightNumber": "538"
+          }
+        ],
+        "price": 2900
+      },
+      "inbound": {
+        "key": "EK541-EK241",
+        "airlines": [
+          "Emirates"
+        ],
+        "from": "AMD",
+        "to": "YYZ",
+        "departDate": "2027-02-06",
+        "departTime": "9:45 AM",
+        "arriveDate": "2027-02-07",
+        "arriveTime": "8:50 AM",
+        "arriveDayOffset": 1,
+        "durationMin": 2015,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 965,
+            "airport": "DXB",
+            "airportName": "Dubai International Airport",
+            "city": "Dubai"
+          }
+        ],
+        "legs": [
+          {
+            "from": "AMD",
+            "fromName": "Sardar Vallabhbhai Patel International Airport",
+            "to": "DXB",
+            "toName": "Dubai International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "9:45 AM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "11:25 AM",
+            "durationMin": 190,
+            "aircraft": "Airbus A350",
+            "airline": "EK",
+            "airlineName": "Emirates",
+            "flightNumber": "541"
+          },
+          {
+            "from": "DXB",
+            "fromName": "Dubai International Airport",
+            "to": "YYZ",
+            "toName": "Toronto Pearson International Airport",
+            "departDate": "2027-02-07",
+            "departTime": "3:30 AM",
+            "arriveDate": "2027-02-07",
+            "arriveTime": "8:50 AM",
+            "durationMin": 860,
+            "aircraft": "Airbus A380",
+            "airline": "EK",
+            "airlineName": "Emirates",
+            "flightNumber": "241"
+          }
+        ],
+        "price": 2900
+      },
+      "alternativeReturns": 0,
+      "bookingOptions": [
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 2837,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 2837,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Emirates",
+          "fare": null,
+          "price": 2900,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Ovago",
+          "fare": null,
+          "price": 2956,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "AranGrant",
+          "fare": null,
+          "price": 3167,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        }
+      ],
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJEWEIiLCJFSyIsIjI0MiJdLFsiRFhCIiwiMjAyNy0wMS0xMSIsIkFNRCIsIkVLIiwiNTM4Il1dLFtbIkFNRCIsIjIwMjctMDItMDYiLCJEWEIiLCJFSyIsIjU0MSJdLFsiRFhCIiwiMjAyNy0wMi0wNyIsIllZWiIsIkVLIiwiMjQxIl1dXQ",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlwSCjIwMjctMDEtMTAiHwoDWVlaEgoyMDI3LTAxLTEwGgNEWEIqAkVLMgMyNDIiHwoDRFhCEgoyMDI3LTAxLTExGgNBTUQqAkVLMgM1MzhqBRIDWVlacgUSA0FNRBpcEgoyMDI3LTAyLTA2Ih8KA0FNRBIKMjAyNy0wMi0wNhoDRFhCKgJFSzIDNTQxIh8KA0RYQhIKMjAyNy0wMi0wNxoDWVlaKgJFSzIDMjQxagUSA0FNRHIFEgNZWVpAAUgBmAEB&hl=en&gl=CA&curr=CAD",
+      "baggagePolicyUrls": [
+        {
+          "airline": "EK",
+          "url": "https://www.emirates.com/us/english/before-you-fly/baggage/checked-baggage/"
+        }
+      ]
+    },
+    {
+      "id": "EY22-EY246_EY247-EY21",
+      "airlines": [
+        "Etihad"
+      ],
+      "price": 2977,
+      "checkedBags": 2,
+      "bagsVerified": true,
+      "cheapest": {
+        "seller": "Ovago",
+        "fare": null,
+        "price": 2977,
+        "isAirline": false,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "direct": {
+        "seller": "Etihad",
+        "fare": null,
+        "price": 2997,
+        "isAirline": true,
+        "checkedBags": null,
+        "refund": null,
+        "changes": null
+      },
+      "refundable": null,
+      "outbound": {
+        "key": "EY22-EY246",
+        "airlines": [
+          "Etihad"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "2:45 PM",
+        "arriveDate": "2027-01-12",
+        "arriveTime": "4:05 AM",
+        "arriveDayOffset": 2,
+        "durationMin": 1610,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 670,
+            "airport": "AUH",
+            "airportName": "Zayed International Airport",
+            "city": "Abu Dhabi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "AUH",
+            "toName": "Zayed International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "2:45 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "12:35 PM",
+            "durationMin": 770,
+            "aircraft": "Airbus A380",
+            "airline": "EY",
+            "airlineName": "Etihad",
+            "flightNumber": "22"
+          },
+          {
+            "from": "AUH",
+            "fromName": "Zayed International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-11",
+            "departTime": "11:45 PM",
+            "arriveDate": "2027-01-12",
+            "arriveTime": "4:05 AM",
+            "durationMin": 170,
+            "aircraft": "Airbus A321",
+            "airline": "EY",
+            "airlineName": "Etihad",
+            "flightNumber": "246"
+          }
+        ],
+        "price": 2997
+      },
+      "inbound": {
+        "key": "EY247-EY21",
+        "airlines": [
+          "Etihad"
+        ],
+        "from": "AMD",
+        "to": "YYZ",
+        "departDate": "2027-02-06",
+        "departTime": "5:20 AM",
+        "arriveDate": "2027-02-07",
+        "arriveTime": "9:20 AM",
+        "arriveDayOffset": 1,
+        "durationMin": 2310,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 1215,
+            "airport": "AUH",
+            "airportName": "Zayed International Airport",
+            "city": "Abu Dhabi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "AMD",
+            "fromName": "Sardar Vallabhbhai Patel International Airport",
+            "to": "AUH",
+            "toName": "Zayed International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "5:20 AM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "7:05 AM",
+            "durationMin": 195,
+            "aircraft": "Airbus A320",
+            "airline": "EY",
+            "airlineName": "Etihad",
+            "flightNumber": "247"
+          },
+          {
+            "from": "AUH",
+            "fromName": "Zayed International Airport",
+            "to": "YYZ",
+            "toName": "Toronto Pearson International Airport",
+            "departDate": "2027-02-07",
+            "departTime": "3:20 AM",
+            "arriveDate": "2027-02-07",
+            "arriveTime": "9:20 AM",
+            "durationMin": 900,
+            "aircraft": "Airbus A380",
+            "airline": "EY",
+            "airlineName": "Etihad",
+            "flightNumber": "21"
+          }
+        ],
+        "price": 2997
+      },
+      "alternativeReturns": 2,
+      "bookingOptions": [
+        {
+          "seller": "Ovago",
+          "fare": null,
+          "price": 2977,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Etihad",
+          "fare": null,
+          "price": 2997,
+          "isAirline": true,
+          "checkedBags": null,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 3065,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 3065,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Gotogate",
+          "fare": null,
+          "price": 3118,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        }
+      ],
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJBVUgiLCJFWSIsIjIyIl0sWyJBVUgiLCIyMDI3LTAxLTExIiwiQU1EIiwiRVkiLCIyNDYiXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkFVSCIsIkVZIiwiMjQ3Il0sWyJBVUgiLCIyMDI3LTAyLTA3IiwiWVlaIiwiRVkiLCIyMSJdXV0",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNBVUgqAkVZMgIyMiIfCgNBVUgSCjIwMjctMDEtMTEaA0FNRCoCRVkyAzI0NmoFEgNZWVpyBRIDQU1EGlsSCjIwMjctMDItMDYiHwoDQU1EEgoyMDI3LTAyLTA2GgNBVUgqAkVZMgMyNDciHgoDQVVIEgoyMDI3LTAyLTA3GgNZWVoqAkVZMgIyMWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
+      "baggagePolicyUrls": [
+        {
+          "airline": "EY",
+          "url": "https://www.etihad.com/en/fly-etihad/baggage"
+        }
+      ]
+    },
+    {
+      "id": "EK242-FZ437_EK541-EK241",
+      "airlines": [
+        "Emirates",
+        "flydubai"
+      ],
+      "price": 3060,
+      "checkedBags": 2,
+      "bagsVerified": true,
+      "cheapest": {
+        "seller": "Justfly.com",
+        "fare": null,
+        "price": 3060,
+        "isAirline": false,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "direct": {
+        "seller": "Emirates",
+        "fare": null,
+        "price": 3132,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "refundable": null,
+      "outbound": {
+        "key": "EK242-FZ437",
+        "airlines": [
+          "Emirates",
+          "flydubai"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "1:55 PM",
+        "arriveDate": "2027-01-12",
+        "arriveTime": "2:40 AM",
+        "arriveDayOffset": 2,
+        "durationMin": 1575,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 655,
+            "airport": "DXB",
+            "airportName": "Dubai International Airport",
+            "city": "Dubai"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "DXB",
+            "toName": "Dubai International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "1:55 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "11:40 AM",
+            "durationMin": 765,
+            "aircraft": "Airbus A380",
+            "airline": "EK",
+            "airlineName": "Emirates",
+            "flightNumber": "242"
+          },
+          {
+            "from": "DXB",
+            "fromName": "Dubai International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-11",
+            "departTime": "10:35 PM",
+            "arriveDate": "2027-01-12",
+            "arriveTime": "2:40 AM",
+            "durationMin": 155,
+            "aircraft": "Boeing 737MAX 8 Passenger",
+            "airline": "FZ",
+            "airlineName": "flydubai",
+            "flightNumber": "437"
+          }
+        ],
+        "price": 3132
+      },
+      "inbound": {
+        "key": "EK541-EK241",
+        "airlines": [
+          "Emirates"
+        ],
+        "from": "AMD",
+        "to": "YYZ",
+        "departDate": "2027-02-06",
+        "departTime": "9:45 AM",
+        "arriveDate": "2027-02-07",
+        "arriveTime": "8:50 AM",
+        "arriveDayOffset": 1,
+        "durationMin": 2015,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 965,
+            "airport": "DXB",
+            "airportName": "Dubai International Airport",
+            "city": "Dubai"
+          }
+        ],
+        "legs": [
+          {
+            "from": "AMD",
+            "fromName": "Sardar Vallabhbhai Patel International Airport",
+            "to": "DXB",
+            "toName": "Dubai International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "9:45 AM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "11:25 AM",
+            "durationMin": 190,
+            "aircraft": "Airbus A350",
+            "airline": "EK",
+            "airlineName": "Emirates",
+            "flightNumber": "541"
+          },
+          {
+            "from": "DXB",
+            "fromName": "Dubai International Airport",
+            "to": "YYZ",
+            "toName": "Toronto Pearson International Airport",
+            "departDate": "2027-02-07",
+            "departTime": "3:30 AM",
+            "arriveDate": "2027-02-07",
+            "arriveTime": "8:50 AM",
+            "durationMin": 860,
+            "aircraft": "Airbus A380",
+            "airline": "EK",
+            "airlineName": "Emirates",
+            "flightNumber": "241"
+          }
+        ],
+        "price": 3132
+      },
+      "alternativeReturns": 0,
+      "bookingOptions": [
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 3060,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 3060,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Emirates",
+          "fare": null,
+          "price": 3132,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Ovago",
+          "fare": null,
+          "price": 3188,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "AranGrant",
+          "fare": null,
+          "price": 3399,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        }
+      ],
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJEWEIiLCJFSyIsIjI0MiJdLFsiRFhCIiwiMjAyNy0wMS0xMSIsIkFNRCIsIkZaIiwiNDM3Il1dLFtbIkFNRCIsIjIwMjctMDItMDYiLCJEWEIiLCJFSyIsIjU0MSJdLFsiRFhCIiwiMjAyNy0wMi0wNyIsIllZWiIsIkVLIiwiMjQxIl1dXQ",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlwSCjIwMjctMDEtMTAiHwoDWVlaEgoyMDI3LTAxLTEwGgNEWEIqAkVLMgMyNDIiHwoDRFhCEgoyMDI3LTAxLTExGgNBTUQqAkZaMgM0MzdqBRIDWVlacgUSA0FNRBpcEgoyMDI3LTAyLTA2Ih8KA0FNRBIKMjAyNy0wMi0wNhoDRFhCKgJFSzIDNTQxIh8KA0RYQhIKMjAyNy0wMi0wNxoDWVlaKgJFSzIDMjQxagUSA0FNRHIFEgNZWVpAAUgBmAEB&hl=en&gl=CA&curr=CAD",
+      "baggagePolicyUrls": [
+        {
+          "airline": "EK",
+          "url": "https://www.emirates.com/us/english/before-you-fly/baggage/checked-baggage/"
+        },
+        {
+          "airline": "FZ",
+          "url": "https://www.flydubai.com/en/flying-with-us/baggage/check-in-baggage"
+        }
+      ]
+    },
+    {
+      "id": "EY22-EY240_EY247-EY21",
+      "airlines": [
+        "Etihad"
+      ],
+      "price": 3173,
+      "checkedBags": 2,
+      "bagsVerified": true,
+      "cheapest": {
+        "seller": "AranGrant",
+        "fare": null,
+        "price": 3173,
+        "isAirline": false,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "direct": {
+        "seller": "Etihad",
+        "fare": null,
+        "price": 3181,
+        "isAirline": true,
+        "checkedBags": null,
+        "refund": null,
+        "changes": null
+      },
+      "refundable": null,
+      "outbound": {
+        "key": "EY22-EY240",
+        "airlines": [
+          "Etihad"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "2:45 PM",
+        "arriveDate": "2027-01-11",
+        "arriveTime": "6:15 PM",
+        "arriveDayOffset": 1,
+        "durationMin": 1020,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 90,
+            "airport": "AUH",
+            "airportName": "Zayed International Airport",
+            "city": "Abu Dhabi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "AUH",
+            "toName": "Zayed International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "2:45 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "12:35 PM",
+            "durationMin": 770,
+            "aircraft": "Airbus A380",
+            "airline": "EY",
+            "airlineName": "Etihad",
+            "flightNumber": "22"
+          },
+          {
+            "from": "AUH",
+            "fromName": "Zayed International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-11",
+            "departTime": "2:05 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "6:15 PM",
+            "durationMin": 160,
+            "aircraft": "Airbus A321",
+            "airline": "EY",
+            "airlineName": "Etihad",
+            "flightNumber": "240"
+          }
+        ],
+        "price": 3181
+      },
+      "inbound": {
+        "key": "EY247-EY21",
+        "airlines": [
+          "Etihad"
+        ],
+        "from": "AMD",
+        "to": "YYZ",
+        "departDate": "2027-02-06",
+        "departTime": "5:20 AM",
+        "arriveDate": "2027-02-07",
+        "arriveTime": "9:20 AM",
+        "arriveDayOffset": 1,
+        "durationMin": 2310,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 1215,
+            "airport": "AUH",
+            "airportName": "Zayed International Airport",
+            "city": "Abu Dhabi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "AMD",
+            "fromName": "Sardar Vallabhbhai Patel International Airport",
+            "to": "AUH",
+            "toName": "Zayed International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "5:20 AM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "7:05 AM",
+            "durationMin": 195,
+            "aircraft": "Airbus A320",
+            "airline": "EY",
+            "airlineName": "Etihad",
+            "flightNumber": "247"
+          },
+          {
+            "from": "AUH",
+            "fromName": "Zayed International Airport",
+            "to": "YYZ",
+            "toName": "Toronto Pearson International Airport",
+            "departDate": "2027-02-07",
+            "departTime": "3:20 AM",
+            "arriveDate": "2027-02-07",
+            "arriveTime": "9:20 AM",
+            "durationMin": 900,
+            "aircraft": "Airbus A380",
+            "airline": "EY",
+            "airlineName": "Etihad",
+            "flightNumber": "21"
+          }
+        ],
+        "price": 3181
+      },
+      "alternativeReturns": 2,
+      "bookingOptions": [
+        {
+          "seller": "AranGrant",
+          "fare": null,
+          "price": 3173,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Ovago",
+          "fare": null,
+          "price": 3176,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Etihad",
+          "fare": null,
+          "price": 3181,
+          "isAirline": true,
+          "checkedBags": null,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 3271,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 3271,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Gotogate",
+          "fare": null,
+          "price": 3324,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        }
+      ],
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJBVUgiLCJFWSIsIjIyIl0sWyJBVUgiLCIyMDI3LTAxLTExIiwiQU1EIiwiRVkiLCIyNDAiXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkFVSCIsIkVZIiwiMjQ3Il0sWyJBVUgiLCIyMDI3LTAyLTA3IiwiWVlaIiwiRVkiLCIyMSJdXV0",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNBVUgqAkVZMgIyMiIfCgNBVUgSCjIwMjctMDEtMTEaA0FNRCoCRVkyAzI0MGoFEgNZWVpyBRIDQU1EGlsSCjIwMjctMDItMDYiHwoDQU1EEgoyMDI3LTAyLTA2GgNBVUgqAkVZMgMyNDciHgoDQVVIEgoyMDI3LTAyLTA3GgNZWVoqAkVZMgIyMWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
+      "baggagePolicyUrls": [
+        {
+          "airline": "EY",
+          "url": "https://www.etihad.com/en/fly-etihad/baggage"
+        }
+      ]
+    },
+    {
+      "id": "AC42-AI817_AI2938-AC43",
+      "airlines": [
+        "Air Canada",
+        "Air India"
+      ],
+      "price": 4326,
+      "checkedBags": 2,
+      "bagsVerified": true,
+      "cheapest": {
+        "seller": "Air Canada",
+        "fare": "Flex",
+        "price": 4326,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": "Partial refund",
+        "changes": "Free changes"
+      },
+      "direct": {
+        "seller": "Air Canada",
+        "fare": "Flex",
+        "price": 4326,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": "Partial refund",
+        "changes": "Free changes"
+      },
+      "refundable": {
+        "seller": "Air Canada",
+        "fare": "Flex",
+        "price": 4326,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": "Partial refund",
+        "changes": "Free changes"
+      },
+      "outbound": {
+        "key": "AC42-AI817",
+        "airlines": [
+          "Air Canada",
+          "Air India"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "8:40 PM",
+        "arriveDate": "2027-01-12",
+        "arriveTime": "7:35 AM",
+        "arriveDayOffset": 2,
+        "durationMin": 1465,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 485,
+            "airport": "DEL",
+            "airportName": "Indira Gandhi International Airport",
+            "city": "New Delhi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "DEL",
+            "toName": "Indira Gandhi International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "8:40 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "9:50 PM",
+            "durationMin": 880,
+            "aircraft": "Boeing 777",
+            "airline": "AC",
+            "airlineName": "Air Canada",
+            "flightNumber": "42"
+          },
+          {
+            "from": "DEL",
+            "fromName": "Indira Gandhi International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-12",
+            "departTime": "5:55 AM",
+            "arriveDate": "2027-01-12",
+            "arriveTime": "7:35 AM",
+            "durationMin": 100,
+            "aircraft": "Airbus A321",
+            "airline": "AI",
+            "airlineName": "Air India",
+            "flightNumber": "817"
+          }
+        ],
+        "price": 3926
+      },
+      "inbound": {
+        "key": "AI2938-AC43",
+        "airlines": [
+          "Air India",
+          "Air Canada"
+        ],
+        "from": "AMD",
+        "to": "YYZ",
+        "departDate": "2027-02-06",
+        "departTime": "6:50 PM",
+        "arriveDate": "2027-02-07",
+        "arriveTime": "5:45 AM",
+        "arriveDayOffset": 1,
+        "durationMin": 1285,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 200,
+            "airport": "DEL",
+            "airportName": "Indira Gandhi International Airport",
+            "city": "New Delhi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "AMD",
+            "fromName": "Sardar Vallabhbhai Patel International Airport",
+            "to": "DEL",
+            "toName": "Indira Gandhi International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "6:50 PM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "8:30 PM",
+            "durationMin": 100,
+            "aircraft": "Airbus A320neo",
+            "airline": "AI",
+            "airlineName": "Air India",
+            "flightNumber": "2938"
+          },
+          {
+            "from": "DEL",
+            "fromName": "Indira Gandhi International Airport",
+            "to": "YYZ",
+            "toName": "Toronto Pearson International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "11:50 PM",
+            "arriveDate": "2027-02-07",
+            "arriveTime": "5:45 AM",
+            "durationMin": 985,
+            "aircraft": "Boeing 777",
+            "airline": "AC",
+            "airlineName": "Air Canada",
+            "flightNumber": "43"
+          }
+        ],
+        "price": 3926
+      },
+      "alternativeReturns": 0,
+      "bookingOptions": [
+        {
+          "seller": "Air Canada",
+          "fare": "Standard",
+          "price": 3926,
+          "isAirline": true,
+          "checkedBags": 1,
+          "refund": "Non-refundable",
+          "changes": "Changes for a fee"
+        },
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 3926,
+          "isAirline": false,
+          "checkedBags": 1,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 3926,
+          "isAirline": false,
+          "checkedBags": 1,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Air Canada",
+          "fare": "Flex",
+          "price": 4326,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": "Partial refund",
+          "changes": "Free changes"
+        },
+        {
+          "seller": "Air Canada",
+          "fare": "Comfort",
+          "price": 4576,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": "Refundable",
+          "changes": "Free changes"
+        },
+        {
+          "seller": "Air Canada",
+          "fare": "Premium Economy Basic",
+          "price": 4901,
+          "isAirline": true,
+          "checkedBags": 1,
+          "refund": "Non-refundable",
+          "changes": "Changes for a fee"
+        },
+        {
+          "seller": "Air Canada",
+          "fare": "Latitude",
+          "price": 6601,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": "Refundable",
+          "changes": "Free changes"
+        }
+      ],
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJERUwiLCJBQyIsIjQyIl0sWyJERUwiLCIyMDI3LTAxLTEyIiwiQU1EIiwiQUkiLCI4MTciXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkRFTCIsIkFJIiwiMjkzOCJdLFsiREVMIiwiMjAyNy0wMi0wNiIsIllZWiIsIkFDIiwiNDMiXV1d",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNERUwqAkFDMgI0MiIfCgNERUwSCjIwMjctMDEtMTIaA0FNRCoCQUkyAzgxN2oFEgNZWVpyBRIDQU1EGlwSCjIwMjctMDItMDYiIAoDQU1EEgoyMDI3LTAyLTA2GgNERUwqAkFJMgQyOTM4Ih4KA0RFTBIKMjAyNy0wMi0wNhoDWVlaKgJBQzICNDNqBRIDQU1EcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD",
+      "baggagePolicyUrls": [
+        {
+          "airline": "AC",
+          "url": "https://www.aircanada.com/ca/en/aco/home/plan/baggage/checked.html"
+        },
+        {
+          "airline": "AI",
+          "url": "https://www.airindia.com/in/en/travel-information/baggage-guidelines.html"
+        }
+      ]
+    },
+    {
+      "id": "QR768-QR534_QR535-QR767",
+      "airlines": [
+        "Qatar Airways"
+      ],
+      "price": 4516,
+      "checkedBags": 2,
+      "bagsVerified": true,
+      "cheapest": {
+        "seller": "Justfly.com",
+        "fare": null,
+        "price": 4516,
+        "isAirline": false,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "direct": {
+        "seller": "Qatar Airways",
+        "fare": null,
+        "price": 4567,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "refundable": null,
+      "outbound": {
+        "key": "QR768-QR534",
+        "airlines": [
+          "Qatar Airways"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "8:10 PM",
+        "arriveDate": "2027-01-12",
+        "arriveTime": "1:30 AM",
+        "arriveDayOffset": 2,
+        "durationMin": 1130,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 195,
+            "airport": "DOH",
+            "airportName": "Hamad International Airport",
+            "city": "Doha"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "DOH",
+            "toName": "Hamad International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "8:10 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "4:45 PM",
+            "durationMin": 755,
+            "aircraft": "Airbus A350",
+            "airline": "QR",
+            "airlineName": "Qatar Airways",
+            "flightNumber": "768"
+          },
+          {
+            "from": "DOH",
+            "fromName": "Hamad International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-11",
+            "departTime": "8:00 PM",
+            "arriveDate": "2027-01-12",
+            "arriveTime": "1:30 AM",
+            "durationMin": 180,
+            "aircraft": "Airbus A320",
+            "airline": "QR",
+            "airlineName": "Qatar Airways",
+            "flightNumber": "534"
+          }
+        ],
+        "price": 4567
+      },
+      "inbound": {
+        "key": "QR535-QR767",
+        "airlines": [
+          "Qatar Airways"
+        ],
+        "from": "AMD",
+        "to": "YYZ",
+        "departDate": "2027-02-06",
+        "departTime": "3:00 AM",
+        "arriveDate": "2027-02-06",
+        "arriveTime": "2:30 PM",
+        "arriveDayOffset": 0,
+        "durationMin": 1320,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 260,
+            "airport": "DOH",
+            "airportName": "Hamad International Airport",
+            "city": "Doha"
+          }
+        ],
+        "legs": [
+          {
+            "from": "AMD",
+            "fromName": "Sardar Vallabhbhai Patel International Airport",
+            "to": "DOH",
+            "toName": "Hamad International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "3:00 AM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "4:10 AM",
+            "durationMin": 220,
+            "aircraft": "Airbus A320",
+            "airline": "QR",
+            "airlineName": "Qatar Airways",
+            "flightNumber": "535"
+          },
+          {
+            "from": "DOH",
+            "fromName": "Hamad International Airport",
+            "to": "YYZ",
+            "toName": "Toronto Pearson International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "8:30 AM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "2:30 PM",
+            "durationMin": 840,
+            "aircraft": "Airbus A350",
+            "airline": "QR",
+            "airlineName": "Qatar Airways",
+            "flightNumber": "767"
+          }
+        ],
+        "price": 4567
+      },
+      "alternativeReturns": 0,
+      "bookingOptions": [
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 4516,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 4516,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Qatar Airways",
+          "fare": null,
+          "price": 4567,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "wego",
+          "fare": null,
+          "price": 4567,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Ovago",
+          "fare": null,
+          "price": 4567,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Gotogate",
+          "fare": null,
+          "price": 4599,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "AranGrant",
+          "fare": null,
+          "price": 4708,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        }
+      ],
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJET0giLCJRUiIsIjc2OCJdLFsiRE9IIiwiMjAyNy0wMS0xMSIsIkFNRCIsIlFSIiwiNTM0Il1dLFtbIkFNRCIsIjIwMjctMDItMDYiLCJET0giLCJRUiIsIjUzNSJdLFsiRE9IIiwiMjAyNy0wMi0wNiIsIllZWiIsIlFSIiwiNzY3Il1dXQ",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlwSCjIwMjctMDEtMTAiHwoDWVlaEgoyMDI3LTAxLTEwGgNET0gqAlFSMgM3NjgiHwoDRE9IEgoyMDI3LTAxLTExGgNBTUQqAlFSMgM1MzRqBRIDWVlacgUSA0FNRBpcEgoyMDI3LTAyLTA2Ih8KA0FNRBIKMjAyNy0wMi0wNhoDRE9IKgJRUjIDNTM1Ih8KA0RPSBIKMjAyNy0wMi0wNhoDWVlaKgJRUjIDNzY3agUSA0FNRHIFEgNZWVpAAUgBmAEB&hl=en&gl=CA&curr=CAD",
+      "baggagePolicyUrls": [
+        {
+          "airline": "QR",
+          "url": "https://www.qatarairways.com/en-us/baggage/allowance.html"
+        }
+      ]
+    }
+  ],
+  "unpriced": [
+    {
+      "id": "AI188-AI1120",
+      "airlines": [
+        "Air India"
+      ],
+      "outbound": {
+        "key": "AI188-AI1120",
+        "airlines": [
+          "Air India"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "11:15 AM",
+        "arriveDate": "2027-01-11",
+        "arriveTime": "6:20 PM",
+        "arriveDayOffset": 1,
+        "durationMin": 1235,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 190,
+            "airport": "DEL",
+            "airportName": "Indira Gandhi International Airport",
+            "city": "New Delhi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "DEL",
+            "toName": "Indira Gandhi International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "11:15 AM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "1:30 PM",
+            "durationMin": 945,
+            "aircraft": "Boeing 787",
+            "airline": "AI",
+            "airlineName": "Air India",
+            "flightNumber": "188"
+          },
+          {
+            "from": "DEL",
+            "fromName": "Indira Gandhi International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-11",
+            "departTime": "4:40 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "6:20 PM",
+            "durationMin": 100,
+            "aircraft": "Airbus A320neo",
+            "airline": "AI",
+            "airlineName": "Air India",
+            "flightNumber": "1120"
+          }
+        ],
+        "price": null
+      },
+      "googleSearchUrl": "https://www.google.com/travel/flights/search?tfs=Gl8SCjIwMjctMDEtMTAiHwoDWVlaEgoyMDI3LTAxLTEwGgNERUwqAkFJMgMxODgiIAoDREVMEgoyMDI3LTAxLTExGgNBTUQqAkFJMgQxMTIwKAFqBRIDWVlacgUSA0FNRBocEgoyMDI3LTAyLTA2KAFqBRIDQU1EcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD"
+    },
+    {
+      "id": "AI192-AI2493",
+      "airlines": [
+        "Air India"
+      ],
+      "outbound": {
+        "key": "AI192-AI2493",
+        "airlines": [
+          "Air India"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "12:30 PM",
+        "arriveDate": "2027-01-11",
+        "arriveTime": "7:35 PM",
+        "arriveDayOffset": 1,
+        "durationMin": 1235,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 245,
+            "airport": "BOM",
+            "airportName": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "city": "Mumbai"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "BOM",
+            "toName": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "departDate": "2027-01-10",
+            "departTime": "12:30 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "2:10 PM",
+            "durationMin": 910,
+            "aircraft": "Boeing 777",
+            "airline": "AI",
+            "airlineName": "Air India",
+            "flightNumber": "192"
+          },
+          {
+            "from": "BOM",
+            "fromName": "Chhatrapati Shivaji Maharaj International Airport Mumbai",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-11",
+            "departTime": "6:15 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "7:35 PM",
+            "durationMin": 80,
+            "aircraft": "Airbus A320neo",
+            "airline": "AI",
+            "airlineName": "Air India",
+            "flightNumber": "2493"
+          }
+        ],
+        "price": null
+      },
+      "googleSearchUrl": "https://www.google.com/travel/flights/search?tfs=Gl8SCjIwMjctMDEtMTAiHwoDWVlaEgoyMDI3LTAxLTEwGgNCT00qAkFJMgMxOTIiIAoDQk9NEgoyMDI3LTAxLTExGgNBTUQqAkFJMgQyNDkzKAFqBRIDWVlacgUSA0FNRBocEgoyMDI3LTAyLTA2KAFqBRIDQU1EcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD"
+    }
+  ],
+  "searchUrl": "https://www.google.com/travel/flights/search?tfs=GhwSCjIwMjctMDEtMTAoAWoFEgNZWVpyBRIDQU1EGhwSCjIwMjctMDItMDYoAWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
+  "errors": []
+}
