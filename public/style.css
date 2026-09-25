@@ -870,3 +870,35 @@ body {
   border-top: 1px solid var(--border-color);
   margin-top: 3rem;
 }
+
+/* Data-quality notes */
+.fare-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: -0.4rem 0 0.8rem;
+}
+
+.level-low { color: var(--accent-green); }
+.level-typical { color: var(--accent-gold); }
+.level-high { color: var(--accent-red); }
+
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reference-note {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.reference-card {
+  padding: 1.1rem 1.3rem;
+}
+
+.reference-card .option-price {
+  text-align: left;
+  margin: 0.2rem 0;
+}

@@ -56,6 +56,7 @@
           <span id="priceChange" class="price-change"></span>
         </div>
         <p id="bestSummary" class="best-summary">Searching live fares…</p>
+        <p id="typicalRange" class="best-summary" hidden></p>
 
         <div id="targetAlert" class="target-alert" hidden></div>
 
@@ -114,10 +115,11 @@
       </div>
     </section>
 
-    <!-- Matching itineraries without a published fare -->
+    <!-- Matching itineraries without a published fare + airline reference fares -->
     <section id="unpricedSection" hidden>
-      <h2 class="section-title">Also on this route — no fare published on Google Flights</h2>
-      <p class="section-note">These itineraries fit your criteria, but the airline doesn't publish a price for them on Google Flights. Check the airline's own website for the current fare.</p>
+      <h2 class="section-title" id="unpricedTitle">Air India — no Toronto ⇄ Ahmedabad fare published</h2>
+      <p class="section-note">These itineraries fit your criteria, but the airline doesn't publish a price for the full trip to Ahmedabad on Google Flights, so no price is shown rather than a guessed one. Check the airline's own website for the current fare.</p>
+      <div id="referenceFares" class="reference-grid"></div>
       <div id="unpricedList" class="unpriced-list"></div>
     </section>
 

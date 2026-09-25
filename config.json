@@ -13,5 +13,6 @@
   "avoidCountries": ["US"],
   "checkedBagsIncluded": 2,
   "maxOptions": 10,
-  "maxLayoverHours": null
+  "maxLayoverHours": null,
+  "referenceAirline": { "code": "AI", "name": "Air India", "hub": "DEL" }
 }

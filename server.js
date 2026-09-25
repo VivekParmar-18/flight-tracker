@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 let currentCheck = null; // in-flight search promise, shared by the poller and "Check now"
+let lastError = null;
 
 // Prevent server crash from transient unhandled async errors
 process.on('uncaughtException', (err) => {
@@ -26,7 +27,10 @@ process.on('unhandledRejection', (reason) => {
 
 function checkNow() {
   if (!currentCheck) {
-    currentCheck = runCheck().finally(() => { currentCheck = null; });
+    currentCheck = runCheck()
+      .then(snapshot => { lastError = null; return snapshot; })
+      .catch(err => { lastError = { message: err.message, at: new Date().toISOString() }; throw err; })
+      .finally(() => { currentCheck = null; });
   }
   return currentCheck;
 }
@@ -36,7 +40,8 @@ const status = () => buildStatus({
   latest: loadLatest(),
   history: loadHistory(),
   isScraping: !!currentCheck,
-  mode: 'server'
+  mode: 'server',
+  lastError
 });
 
 // API: flight tracking status, latest live results and history

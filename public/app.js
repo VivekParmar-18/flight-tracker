@@ -86,7 +86,6 @@ async function runLiveCheck({ auto = false } = {}) {
     const data = await res.json();
     if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
     render(data);
-    showError(null);
     const best = data.latest?.bestPrice;
     btn.innerHTML = `<span class="btn-icon">✓</span> ${best != null ? `Best now: ${money(best)}` : 'Prices updated'}`;
   } catch (err) {
@@ -115,6 +114,7 @@ function render(data) {
   latestData = data;
   const { config, latest, history, stats } = data;
 
+  renderDataHealth(latest, stats);
   renderHeader(config, latest);
   renderCriteria(config);
   renderHero(config, latest, stats);
@@ -126,6 +126,21 @@ function render(data) {
 
   targetNextCheckTimestamp = stats.nextCheckTimestamp;
   updateCountdown();
+}
+
+// Warn loudly whenever the prices on screen are not fresh, so old data is never mistaken for live data
+function renderDataHealth(latest, stats) {
+  const notes = [];
+  if (latest) {
+    const ageMin = Math.round((Date.now() - Date.parse(latest.timestamp)) / 60000);
+    const age = ageMin < 90 ? `${ageMin} min` : `${Math.round(ageMin / 60)} h`;
+    if (stats.lastError) notes.push(`Latest live check failed: ${stats.lastError.message}. Prices below are from ${age} ago.`);
+    else if (ageMin > (stats.intervalMinutes || 10) * 3 && !checkInFlight) notes.push(`Prices below are ${age} old — press "Check Live Prices Now" to refresh.`);
+    if (latest.partial) notes.push('Some flights could not be priced in the last check and may be missing from the list.');
+  } else if (stats.lastError) {
+    notes.push(`Live check failed: ${stats.lastError.message}`);
+  }
+  showError(notes.join(' '));
 }
 
 function renderHeader(config, latest) {
@@ -185,6 +200,14 @@ function renderHero(config, latest, stats) {
       ` • Sold by ${esc(best.cheapest?.seller || '—')}${direct}`;
   } else if (latest) {
     summary.textContent = 'No priced flights currently match all criteria.';
+  }
+
+  const typical = document.getElementById('typicalRange');
+  const range = latest?.typicalRange;
+  typical.hidden = !(best && range);
+  if (best && range) {
+    const level = best.price < range[0] ? 'low' : best.price > range[1] ? 'high' : 'typical';
+    typical.innerHTML = `Google Flights says fares for this search are usually <strong>${money(range[0])}–${money(range[1])}</strong> — today's best is <strong class="level-${level}">${level}</strong>.`;
   }
 
   const target = getTarget(config);
@@ -251,6 +274,7 @@ function renderChart(history, targetPrice) {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      layout: { padding: { left: 6 } },
       interaction: { mode: 'index', intersect: false },
       plugins: {
         legend: { labels: { color: '#8ba2b8', font: { family: 'Outfit', size: 12 } } },
@@ -344,6 +368,7 @@ function optionCard(o, isBest) {
           <span class="price-sub">round trip via ${esc(o.cheapest?.seller || '—')}</span>
         </div>
       </div>
+${o.cheapestAnyBags ? `<p class="fare-note">ℹ️ Price shown is the cheapest fare with ${o.checkedBags} free checked bags. The lowest fare on this trip is ${money(o.cheapestAnyBags.price)}${o.cheapestAnyBags.fare ? ` (${esc(o.cheapestAnyBags.fare)})` : ''} with only ${o.cheapestAnyBags.checkedBags ?? 'unknown'} checked bag${o.cheapestAnyBags.checkedBags === 1 ? '' : 's'}.</p>` : ''}
       <div class="legs">${legSummary('Outbound', o.outbound)}${legSummary('Return', o.inbound)}</div>
       <details class="option-details">
         <summary>Flight numbers, layovers &amp; all ${o.bookingOptions?.length || 0} booking options</summary>
@@ -388,9 +413,31 @@ function renderOptions(latest) {
   }
 }
 
+function referenceCard(label, fare) {
+  if (!fare) return '';
+  const range = fare.typicalRange;
+  const level = range ? (fare.price < range[0] ? 'low' : fare.price > range[1] ? 'high' : 'typical') : null;
+  return `
+    <div class="card reference-card">
+      <div class="leg-label">${esc(label)}</div>
+      <div class="option-price"><span class="price">${money(fare.price)}</span></div>
+      <div class="leg-meta">${fare.flights.map(esc).join(' → ')}${range ? ` • usually ${money(range[0])}–${money(range[1])}, now <span class="level-${level}">${level}</span>` : ''}</div>
+      <a class="btn btn-link btn-sm" target="_blank" rel="noopener" href="${esc(fare.url)}">View on Google Flights ↗</a>
+    </div>`;
+}
+
 function renderUnpriced(latest) {
   const items = latest?.unpriced || [];
-  document.getElementById('unpricedSection').hidden = !items.length;
+  const ref = latest?.reference;
+  const r = latest?.route;
+  document.getElementById('unpricedSection').hidden = !items.length && !ref;
+  document.getElementById('unpricedTitle').textContent = ref
+    ? `${ref.name} — no ${r?.originCity || ''} ⇄ ${r?.destinationCity || ''} fare published`
+    : 'Also on this route — no fare published';
+  document.getElementById('referenceFares').innerHTML = ref ? `
+    <p class="section-note reference-note">For comparison, ${esc(ref.name)}'s live fares to its hub ${esc(ref.hub)} on the same dates (Delhi only — Ahmedabad would need a separate ticket, so these don't meet your single-ticket rule):</p>
+    ${referenceCard(`Round trip ${r?.origin || ''} ⇄ ${ref.hub}`, ref.roundTrip)}
+    ${referenceCard(`One way ${r?.origin || ''} → ${ref.hub}`, ref.oneWay)}` : '';
   document.getElementById('unpricedList').innerHTML = items.map(u => {
     const airline = u.airlines[0];
     const site = AIRLINE_SITES[airline];

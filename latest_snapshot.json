@@ -1,6 +1,6 @@
 {
-  "id": "1790318414659",
-  "timestamp": "2026-09-25T06:40:14.659Z",
+  "id": "1790319604637",
+  "timestamp": "2026-09-25T07:00:04.109Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -18,7 +18,7 @@
       "Emirates"
     ],
     "price": 2837,
-    "seller": "Justfly.com"
+    "seller": "FlightHub"
   },
   "options": [
     {
@@ -30,7 +30,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 2837,
         "isAirline": false,
@@ -38,6 +38,8 @@
         "refund": null,
         "changes": null
       },
+      "cheapestAnyBags": null,
+      "googleListedPrice": 2900,
       "direct": {
         "seller": "Emirates",
         "fare": null,
@@ -163,7 +165,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 2837,
           "isAirline": false,
@@ -172,7 +174,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 2837,
           "isAirline": false,
@@ -234,6 +236,8 @@
         "refund": null,
         "changes": null
       },
+      "cheapestAnyBags": null,
+      "googleListedPrice": 2997,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -431,6 +435,8 @@
         "refund": null,
         "changes": null
       },
+      "cheapestAnyBags": null,
+      "googleListedPrice": 3132,
       "direct": {
         "seller": "Emirates",
         "fare": null,
@@ -632,6 +638,8 @@
         "refund": null,
         "changes": null
       },
+      "cheapestAnyBags": null,
+      "googleListedPrice": 3181,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -838,6 +846,16 @@
         "refund": "Partial refund",
         "changes": "Free changes"
       },
+      "cheapestAnyBags": {
+        "seller": "Air Canada",
+        "fare": "Standard",
+        "price": 3926,
+        "isAirline": true,
+        "checkedBags": 1,
+        "refund": "Non-refundable",
+        "changes": "Changes for a fee"
+      },
+      "googleListedPrice": 3926,
       "direct": {
         "seller": "Air Canada",
         "fare": "Flex",
@@ -1058,7 +1076,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 4516,
         "isAirline": false,
@@ -1066,6 +1084,8 @@
         "refund": null,
         "changes": null
       },
+      "cheapestAnyBags": null,
+      "googleListedPrice": 4567,
       "direct": {
         "seller": "Qatar Airways",
         "fare": null,
@@ -1191,7 +1211,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4516,
           "isAirline": false,
@@ -1200,7 +1220,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4516,
           "isAirline": false,
@@ -1392,6 +1412,39 @@
       "googleSearchUrl": "https://www.google.com/travel/flights/search?tfs=Gl8SCjIwMjctMDEtMTAiHwoDWVlaEgoyMDI3LTAxLTEwGgNCT00qAkFJMgMxOTIiIAoDQk9NEgoyMDI3LTAxLTExGgNBTUQqAkFJMgQyNDkzKAFqBRIDWVlacgUSA0FNRBocEgoyMDI3LTAyLTA2KAFqBRIDQU1EcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD"
     }
   ],
+  "typicalRange": [
+    2350,
+    3250
+  ],
+  "reference": {
+    "code": "AI",
+    "name": "Air India",
+    "hub": "DEL",
+    "roundTrip": {
+      "price": 2764,
+      "typicalRange": [
+        2050,
+        2750
+      ],
+      "flights": [
+        "AI 188"
+      ],
+      "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUwaHhIKMjAyNy0wMi0wNjICQUlqBRIDREVMcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD"
+    },
+    "oneWay": {
+      "price": 1954,
+      "typicalRange": [
+        1300,
+        1900
+      ],
+      "flights": [
+        "AI 188"
+      ],
+      "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUxAAUgBmAEC&hl=en&gl=CA&curr=CAD"
+    }
+  },
+  "partial": false,
+  "rejectedCount": 0,
   "searchUrl": "https://www.google.com/travel/flights/search?tfs=GhwSCjIwMjctMDEtMTAoAWoFEgNZWVpyBRIDQU1EGhwSCjIwMjctMDItMDYoAWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
   "errors": []
 }
