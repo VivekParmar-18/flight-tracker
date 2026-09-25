@@ -583,5 +583,44 @@
       ]
     },
     "bookingUrl": "https://www.airindia.com/in/en/google-flight-booking.html?or=YYZ&de=AMD&on=202701101115&re=202702060820&ad=1&ch=0&in=0&tr=R&cc=ECONOMY&po=CA"
+  },
+  {
+    "id": "1790303407301",
+    "timestamp": "2026-09-25T02:30:07.301Z",
+    "origin": "YYZ",
+    "destination": "AMD",
+    "dateFrom": "2027-01-10",
+    "dateTo": "2027-02-06",
+    "airline": "Air India",
+    "priceCAD": 2553,
+    "currency": "CAD",
+    "stops": 1,
+    "layover": "New Delhi (DEL)",
+    "noUsLayover": true,
+    "noSelfTransfer": true,
+    "checkedBags": "2 bags (up to 23 kg each)",
+    "carryOn": "1 bag (7 kg) + 1 personal item",
+    "refundableOption": "Economy Flex (approx. +$180 - $250 CAD)",
+    "outbound": {
+      "date": "2027-01-10",
+      "departureTime": "11:15 AM",
+      "arrivalTime": "6:20 PM+1",
+      "duration": "20 hr 35 min",
+      "flights": [
+        "AI 188 (Boeing 787)",
+        "AI 1120 (Airbus A320neo)"
+      ]
+    },
+    "inbound": {
+      "date": "2027-02-06",
+      "departureTime": "8:20 PM",
+      "arrivalTime": "7:40 AM+1",
+      "duration": "21 hr 50 min",
+      "flights": [
+        "AI 1121 (Airbus A321)",
+        "AI 187 (Boeing 787)"
+      ]
+    },
+    "bookingUrl": "https://www.airindia.com/in/en/google-flight-booking.html?or=YYZ&de=AMD&on=202701101115&re=202702060820&ad=1&ch=0&in=0&tr=R&cc=ECONOMY&po=CA"
   }
 ]
