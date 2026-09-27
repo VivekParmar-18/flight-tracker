@@ -1,6 +1,6 @@
 {
-  "id": "1790464424332",
-  "timestamp": "2026-09-26T23:13:42.975Z",
+  "id": "1790475055762",
+  "timestamp": "2026-09-27T02:10:55.493Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -18,7 +18,7 @@
       "Emirates"
     ],
     "price": 2839,
-    "seller": "Justfly.com"
+    "seller": "FlightHub"
   },
   "options": [
     {
@@ -30,7 +30,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 2839,
         "isAirline": false,
@@ -165,7 +165,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 2839,
           "isAirline": false,
@@ -174,7 +174,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 2839,
           "isAirline": false,
@@ -220,17 +220,17 @@
       ]
     },
     {
-      "id": "EY22-EY246_EY247-EY21",
+      "id": "EY22-EY246_EY241-EY21",
       "airlines": [
         "Etihad"
       ],
-      "price": 2976,
+      "price": 2979,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "AranGrant",
+        "seller": "Ovago",
         "fare": null,
-        "price": 2976,
+        "price": 2979,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -305,22 +305,22 @@
         "price": 2999
       },
       "inbound": {
-        "key": "EY247-EY21",
+        "key": "EY241-EY21",
         "airlines": [
           "Etihad"
         ],
         "from": "AMD",
         "to": "YYZ",
         "departDate": "2027-02-06",
-        "departTime": "5:20 AM",
+        "departTime": "9:30 PM",
         "arriveDate": "2027-02-07",
         "arriveTime": "9:20 AM",
         "arriveDayOffset": 1,
-        "durationMin": 2310,
+        "durationMin": 1340,
         "stops": 1,
         "layovers": [
           {
-            "minutes": 1215,
+            "minutes": 240,
             "airport": "AUH",
             "airportName": "Zayed International Airport",
             "city": "Abu Dhabi"
@@ -333,14 +333,14 @@
             "to": "AUH",
             "toName": "Zayed International Airport",
             "departDate": "2027-02-06",
-            "departTime": "5:20 AM",
+            "departTime": "9:30 PM",
             "arriveDate": "2027-02-06",
-            "arriveTime": "7:05 AM",
-            "durationMin": 195,
-            "aircraft": "Airbus A320",
+            "arriveTime": "11:20 PM",
+            "durationMin": 200,
+            "aircraft": "Airbus A321",
             "airline": "EY",
             "airlineName": "Etihad",
-            "flightNumber": "247"
+            "flightNumber": "241"
           },
           {
             "from": "AUH",
@@ -360,17 +360,8 @@
         ],
         "price": 2999
       },
-      "alternativeReturns": 2,
+      "alternativeReturns": 1,
       "bookingOptions": [
-        {
-          "seller": "AranGrant",
-          "fare": null,
-          "price": 2976,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
         {
           "seller": "Ovago",
           "fare": null,
@@ -417,8 +408,8 @@
           "changes": null
         }
       ],
-      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJBVUgiLCJFWSIsIjIyIl0sWyJBVUgiLCIyMDI3LTAxLTExIiwiQU1EIiwiRVkiLCIyNDYiXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkFVSCIsIkVZIiwiMjQ3Il0sWyJBVUgiLCIyMDI3LTAyLTA3IiwiWVlaIiwiRVkiLCIyMSJdXV0",
-      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNBVUgqAkVZMgIyMiIfCgNBVUgSCjIwMjctMDEtMTEaA0FNRCoCRVkyAzI0NmoFEgNZWVpyBRIDQU1EGlsSCjIwMjctMDItMDYiHwoDQU1EEgoyMDI3LTAyLTA2GgNBVUgqAkVZMgMyNDciHgoDQVVIEgoyMDI3LTAyLTA3GgNZWVoqAkVZMgIyMWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJBVUgiLCJFWSIsIjIyIl0sWyJBVUgiLCIyMDI3LTAxLTExIiwiQU1EIiwiRVkiLCIyNDYiXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkFVSCIsIkVZIiwiMjQxIl0sWyJBVUgiLCIyMDI3LTAyLTA3IiwiWVlaIiwiRVkiLCIyMSJdXV0",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNBVUgqAkVZMgIyMiIfCgNBVUgSCjIwMjctMDEtMTEaA0FNRCoCRVkyAzI0NmoFEgNZWVpyBRIDQU1EGlsSCjIwMjctMDItMDYiHwoDQU1EEgoyMDI3LTAyLTA2GgNBVUgqAkVZMgMyNDEiHgoDQVVIEgoyMDI3LTAyLTA3GgNZWVoqAkVZMgIyMWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
       "baggagePolicyUrls": [
         {
           "airline": "EY",
@@ -631,7 +622,7 @@
       ]
     },
     {
-      "id": "EY22-EY240_EY247-EY21",
+      "id": "EY22-EY240_EY241-EY21",
       "airlines": [
         "Etihad"
       ],
@@ -716,22 +707,22 @@
         "price": 3183
       },
       "inbound": {
-        "key": "EY247-EY21",
+        "key": "EY241-EY21",
         "airlines": [
           "Etihad"
         ],
         "from": "AMD",
         "to": "YYZ",
         "departDate": "2027-02-06",
-        "departTime": "5:20 AM",
+        "departTime": "9:30 PM",
         "arriveDate": "2027-02-07",
         "arriveTime": "9:20 AM",
         "arriveDayOffset": 1,
-        "durationMin": 2310,
+        "durationMin": 1340,
         "stops": 1,
         "layovers": [
           {
-            "minutes": 1215,
+            "minutes": 240,
             "airport": "AUH",
             "airportName": "Zayed International Airport",
             "city": "Abu Dhabi"
@@ -744,14 +735,14 @@
             "to": "AUH",
             "toName": "Zayed International Airport",
             "departDate": "2027-02-06",
-            "departTime": "5:20 AM",
+            "departTime": "9:30 PM",
             "arriveDate": "2027-02-06",
-            "arriveTime": "7:05 AM",
-            "durationMin": 195,
-            "aircraft": "Airbus A320",
+            "arriveTime": "11:20 PM",
+            "durationMin": 200,
+            "aircraft": "Airbus A321",
             "airline": "EY",
             "airlineName": "Etihad",
-            "flightNumber": "247"
+            "flightNumber": "241"
           },
           {
             "from": "AUH",
@@ -771,7 +762,7 @@
         ],
         "price": 3183
       },
-      "alternativeReturns": 2,
+      "alternativeReturns": 1,
       "bookingOptions": [
         {
           "seller": "AranGrant",
@@ -828,8 +819,8 @@
           "changes": null
         }
       ],
-      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJBVUgiLCJFWSIsIjIyIl0sWyJBVUgiLCIyMDI3LTAxLTExIiwiQU1EIiwiRVkiLCIyNDAiXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkFVSCIsIkVZIiwiMjQ3Il0sWyJBVUgiLCIyMDI3LTAyLTA3IiwiWVlaIiwiRVkiLCIyMSJdXV0",
-      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNBVUgqAkVZMgIyMiIfCgNBVUgSCjIwMjctMDEtMTEaA0FNRCoCRVkyAzI0MGoFEgNZWVpyBRIDQU1EGlsSCjIwMjctMDItMDYiHwoDQU1EEgoyMDI3LTAyLTA2GgNBVUgqAkVZMgMyNDciHgoDQVVIEgoyMDI3LTAyLTA3GgNZWVoqAkVZMgIyMWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJBVUgiLCJFWSIsIjIyIl0sWyJBVUgiLCIyMDI3LTAxLTExIiwiQU1EIiwiRVkiLCIyNDAiXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkFVSCIsIkVZIiwiMjQxIl0sWyJBVUgiLCIyMDI3LTAyLTA3IiwiWVlaIiwiRVkiLCIyMSJdXV0",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNBVUgqAkVZMgIyMiIfCgNBVUgSCjIwMjctMDEtMTEaA0FNRCoCRVkyAzI0MGoFEgNZWVpyBRIDQU1EGlsSCjIwMjctMDItMDYiHwoDQU1EEgoyMDI3LTAyLTA2GgNBVUgqAkVZMgMyNDEiHgoDQVVIEgoyMDI3LTAyLTA3GgNZWVoqAkVZMgIyMWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
       "baggagePolicyUrls": [
         {
           "airline": "EY",
@@ -1085,7 +1076,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 4517,
         "isAirline": false,
@@ -1220,7 +1211,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4517,
           "isAirline": false,
@@ -1229,7 +1220,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4517,
           "isAirline": false,
