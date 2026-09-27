@@ -1,6 +1,6 @@
 {
-  "id": "1790475055762",
-  "timestamp": "2026-09-27T02:10:55.493Z",
+  "id": "1790498360338",
+  "timestamp": "2026-09-27T08:39:20.037Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -224,13 +224,13 @@
       "airlines": [
         "Etihad"
       ],
-      "price": 2979,
+      "price": 2976,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Ovago",
+        "seller": "AranGrant",
         "fare": null,
-        "price": 2979,
+        "price": 2976,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -362,6 +362,15 @@
       },
       "alternativeReturns": 1,
       "bookingOptions": [
+        {
+          "seller": "AranGrant",
+          "fare": null,
+          "price": 2976,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
         {
           "seller": "Ovago",
           "fare": null,
@@ -1076,7 +1085,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 4517,
         "isAirline": false,
@@ -1211,7 +1220,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4517,
           "isAirline": false,
@@ -1220,7 +1229,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4517,
           "isAirline": false,
