@@ -1,6 +1,6 @@
 {
-  "id": "1790606353786",
-  "timestamp": "2026-09-28T14:39:13.462Z",
+  "id": "1790628856093",
+  "timestamp": "2026-09-28T20:54:15.718Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -18,7 +18,7 @@
       "Emirates"
     ],
     "price": 2839,
-    "seller": "Justfly.com"
+    "seller": "FlightHub"
   },
   "options": [
     {
@@ -30,7 +30,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 2839,
         "isAirline": false,
@@ -165,7 +165,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 2839,
           "isAirline": false,
@@ -174,7 +174,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 2839,
           "isAirline": false,
@@ -652,7 +652,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 3061,
         "isAirline": false,
@@ -788,7 +788,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3061,
           "isAirline": false,
@@ -797,7 +797,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3061,
           "isAirline": false,
@@ -1065,13 +1065,13 @@
         "Air Canada",
         "Air India"
       ],
-      "price": 4326,
+      "price": 4346,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 4326,
+        "price": 4346,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -1080,7 +1080,7 @@
       "cheapestAnyBags": {
         "seller": "Air Canada",
         "fare": "Standard",
-        "price": 3926,
+        "price": 3946,
         "isAirline": true,
         "checkedBags": 1,
         "refund": "Non-refundable",
@@ -1090,7 +1090,7 @@
       "direct": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 4326,
+        "price": 4346,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -1099,7 +1099,7 @@
       "refundable": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 4326,
+        "price": 4346,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -1224,7 +1224,7 @@
         {
           "seller": "Air Canada",
           "fare": "Standard",
-          "price": 3926,
+          "price": 3946,
           "isAirline": true,
           "checkedBags": 1,
           "refund": "Non-refundable",
@@ -1233,7 +1233,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 3926,
+          "price": 3946,
           "isAirline": false,
           "checkedBags": 1,
           "refund": null,
@@ -1242,7 +1242,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 3926,
+          "price": 3946,
           "isAirline": false,
           "checkedBags": 1,
           "refund": null,
@@ -1251,7 +1251,7 @@
         {
           "seller": "Air Canada",
           "fare": "Flex",
-          "price": 4326,
+          "price": 4346,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Partial refund",
@@ -1260,7 +1260,7 @@
         {
           "seller": "Air Canada",
           "fare": "Comfort",
-          "price": 4576,
+          "price": 4596,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Refundable",
@@ -1269,7 +1269,7 @@
         {
           "seller": "Air Canada",
           "fare": "Premium Economy Basic",
-          "price": 4901,
+          "price": 4951,
           "isAirline": true,
           "checkedBags": 1,
           "refund": "Non-refundable",
@@ -1278,7 +1278,7 @@
         {
           "seller": "Air Canada",
           "fare": "Latitude",
-          "price": 6601,
+          "price": 6621,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Refundable",
