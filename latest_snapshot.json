@@ -1,6 +1,6 @@
 {
-  "id": "1790575385297",
-  "timestamp": "2026-09-28T06:03:04.851Z",
+  "id": "1790606353786",
+  "timestamp": "2026-09-28T14:39:13.462Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -18,7 +18,7 @@
       "Emirates"
     ],
     "price": 2839,
-    "seller": "FlightHub"
+    "seller": "Justfly.com"
   },
   "options": [
     {
@@ -30,7 +30,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 2839,
         "isAirline": false,
@@ -165,7 +165,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 2839,
           "isAirline": false,
@@ -174,7 +174,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 2839,
           "isAirline": false,
@@ -652,7 +652,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 3061,
         "isAirline": false,
@@ -788,7 +788,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3061,
           "isAirline": false,
@@ -797,7 +797,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3061,
           "isAirline": false,
@@ -1307,7 +1307,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 4517,
         "isAirline": false,
@@ -1442,7 +1442,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4517,
           "isAirline": false,
@@ -1451,7 +1451,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4517,
           "isAirline": false,
