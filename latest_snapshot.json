@@ -1,6 +1,6 @@
 {
-  "id": "1790688612713",
-  "timestamp": "2026-09-29T13:30:12.351Z",
+  "id": "1790708264773",
+  "timestamp": "2026-09-29T18:57:44.168Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -18,7 +18,7 @@
       "Emirates"
     ],
     "price": 2840,
-    "seller": "FlightHub"
+    "seller": "Justfly.com"
   },
   "options": [
     {
@@ -30,7 +30,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 2840,
         "isAirline": false,
@@ -165,7 +165,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 2840,
           "isAirline": false,
@@ -174,7 +174,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 2840,
           "isAirline": false,
@@ -436,7 +436,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 3063,
         "isAirline": false,
@@ -445,7 +445,7 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 3134,
+      "googleListedPrice": 3135,
       "direct": {
         "seller": "Emirates",
         "fare": null,
@@ -511,7 +511,7 @@
             "flightNumber": "437"
           }
         ],
-        "price": 3134
+        "price": 3135
       },
       "inbound": {
         "key": "EK541-EK241",
@@ -567,12 +567,12 @@
             "flightNumber": "241"
           }
         ],
-        "price": 3134
+        "price": 3135
       },
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3063,
           "isAirline": false,
@@ -581,7 +581,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3063,
           "isAirline": false,
@@ -635,13 +635,13 @@
       "airlines": [
         "Etihad"
       ],
-      "price": 3082,
+      "price": 3203,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "wego",
+        "seller": "AranGrant",
         "fare": null,
-        "price": 3082,
+        "price": 3203,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -774,15 +774,6 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "wego",
-          "fare": null,
-          "price": 3082,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
           "seller": "AranGrant",
           "fare": null,
           "price": 3203,
@@ -865,7 +856,7 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 4087,
+      "googleListedPrice": 4116,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -931,7 +922,7 @@
             "flightNumber": "111"
           }
         ],
-        "price": 4087
+        "price": 4116
       },
       "inbound": {
         "key": "EY241-EY21",
@@ -941,15 +932,15 @@
         "from": "AMD",
         "to": "YYZ",
         "departDate": "2027-02-06",
-        "departTime": "9:30 PM",
+        "departTime": "9:00 PM",
         "arriveDate": "2027-02-07",
         "arriveTime": "9:20 AM",
         "arriveDayOffset": 1,
-        "durationMin": 1340,
+        "durationMin": 1370,
         "stops": 1,
         "layovers": [
           {
-            "minutes": 240,
+            "minutes": 280,
             "airport": "AUH",
             "airportName": "Zayed International Airport",
             "city": "Abu Dhabi"
@@ -962,10 +953,10 @@
             "to": "AUH",
             "toName": "Zayed International Airport",
             "departDate": "2027-02-06",
-            "departTime": "9:30 PM",
+            "departTime": "9:00 PM",
             "arriveDate": "2027-02-06",
-            "arriveTime": "11:20 PM",
-            "durationMin": 200,
+            "arriveTime": "10:40 PM",
+            "durationMin": 190,
             "aircraft": "Airbus A321",
             "airline": "EY",
             "airlineName": "Etihad",
@@ -987,7 +978,7 @@
             "flightNumber": "21"
           }
         ],
-        "price": 4087
+        "price": 4116
       },
       "alternativeReturns": 0,
       "bookingOptions": [
@@ -1307,7 +1298,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 4249,
         "isAirline": false,
@@ -1442,7 +1433,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4249,
           "isAirline": false,
@@ -1451,7 +1442,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4249,
           "isAirline": false,
