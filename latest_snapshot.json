@@ -1,6 +1,6 @@
 {
-  "id": "1790662875351",
-  "timestamp": "2026-09-29T06:21:14.994Z",
+  "id": "1790688612713",
+  "timestamp": "2026-09-29T13:30:12.351Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -237,7 +237,7 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 3027,
+      "googleListedPrice": 3028,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -302,7 +302,7 @@
             "flightNumber": "246"
           }
         ],
-        "price": 3027
+        "price": 3028
       },
       "inbound": {
         "key": "EY241-EY21",
@@ -358,7 +358,7 @@
             "flightNumber": "21"
           }
         ],
-        "price": 3027
+        "price": 3028
       },
       "alternativeReturns": 1,
       "bookingOptions": [
@@ -436,7 +436,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 3063,
         "isAirline": false,
@@ -572,7 +572,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3063,
           "isAirline": false,
@@ -581,7 +581,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3063,
           "isAirline": false,
@@ -648,7 +648,7 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 3211,
+      "googleListedPrice": 3212,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -713,7 +713,7 @@
             "flightNumber": "240"
           }
         ],
-        "price": 3211
+        "price": 3212
       },
       "inbound": {
         "key": "EY241-EY21",
@@ -769,7 +769,7 @@
             "flightNumber": "21"
           }
         ],
-        "price": 3211
+        "price": 3212
       },
       "alternativeReturns": 0,
       "bookingOptions": [
@@ -1307,7 +1307,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 4249,
         "isAirline": false,
@@ -1442,7 +1442,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4249,
           "isAirline": false,
@@ -1451,7 +1451,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4249,
           "isAirline": false,
