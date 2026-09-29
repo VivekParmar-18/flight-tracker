@@ -1,6 +1,6 @@
 {
-  "id": "1790628856093",
-  "timestamp": "2026-09-28T20:54:15.718Z",
+  "id": "1790642503044",
+  "timestamp": "2026-09-29T00:41:42.527Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -18,7 +18,7 @@
       "Emirates"
     ],
     "price": 2839,
-    "seller": "FlightHub"
+    "seller": "Justfly.com"
   },
   "options": [
     {
@@ -30,7 +30,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 2839,
         "isAirline": false,
@@ -165,7 +165,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 2839,
           "isAirline": false,
@@ -174,7 +174,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 2839,
           "isAirline": false,
@@ -652,7 +652,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 3061,
         "isAirline": false,
@@ -788,7 +788,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3061,
           "isAirline": false,
@@ -797,7 +797,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3061,
           "isAirline": false,
@@ -1065,13 +1065,13 @@
         "Air Canada",
         "Air India"
       ],
-      "price": 4346,
+      "price": 4206,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 4346,
+        "price": 4206,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -1086,11 +1086,11 @@
         "refund": "Non-refundable",
         "changes": "Changes for a fee"
       },
-      "googleListedPrice": 3926,
+      "googleListedPrice": 3946,
       "direct": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 4346,
+        "price": 4206,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -1099,7 +1099,7 @@
       "refundable": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 4346,
+        "price": 4206,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -1160,7 +1160,7 @@
             "flightNumber": "817"
           }
         ],
-        "price": 3926
+        "price": 3946
       },
       "inbound": {
         "key": "AI2938-AC43",
@@ -1217,7 +1217,7 @@
             "flightNumber": "43"
           }
         ],
-        "price": 3926
+        "price": 3946
       },
       "alternativeReturns": 0,
       "bookingOptions": [
@@ -1251,7 +1251,7 @@
         {
           "seller": "Air Canada",
           "fare": "Flex",
-          "price": 4346,
+          "price": 4206,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Partial refund",
@@ -1260,7 +1260,7 @@
         {
           "seller": "Air Canada",
           "fare": "Comfort",
-          "price": 4596,
+          "price": 4426,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Refundable",
@@ -1307,7 +1307,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 4517,
         "isAirline": false,
@@ -1442,7 +1442,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4517,
           "isAirline": false,
@@ -1451,7 +1451,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4517,
           "isAirline": false,
