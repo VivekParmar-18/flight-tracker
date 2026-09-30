@@ -556,5 +556,23 @@
       "EY22-3L111_EY241-EY21": 4075,
       "AC42-AI817_AI2938-AC43": 4206
     }
+  },
+  {
+    "timestamp": "2026-09-30T23:17:01.589Z",
+    "bestPrice": 2841,
+    "bestAirlines": [
+      "Emirates"
+    ],
+    "bestSeller": "FlightHub",
+    "matches": 7,
+    "prices": {
+      "EK242-EK538_EK541-EK241": 2841,
+      "EY22-EY246_EY241-EY21": 3005,
+      "EK242-FZ437_EK541-EK241": 3063,
+      "EY22-EY240_EY241-EY21": 3084,
+      "EY22-3L111_EY241-EY21": 4075,
+      "AC42-AI817_AI2938-AC43": 4206,
+      "QR768-QR534_QR535-QR767": 4249
+    }
   }
 ]
