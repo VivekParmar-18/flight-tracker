@@ -1,6 +1,6 @@
 {
-  "id": "1790822820907",
-  "timestamp": "2026-10-01T02:47:00.567Z",
+  "id": "1790847119134",
+  "timestamp": "2026-10-01T09:31:58.772Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -11,13 +11,13 @@
     "dateTo": "2027-02-06",
     "currency": "CAD"
   },
-  "bestPrice": 2841,
+  "bestPrice": 2840,
   "best": {
     "id": "EK242-EK538_EK541-EK241",
     "airlines": [
       "Emirates"
     ],
-    "price": 2841,
+    "price": 2840,
     "seller": "FlightHub"
   },
   "options": [
@@ -26,24 +26,24 @@
       "airlines": [
         "Emirates"
       ],
-      "price": 2841,
+      "price": 2840,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "FlightHub",
         "fare": null,
-        "price": 2841,
+        "price": 2840,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 2904,
+      "googleListedPrice": 2903,
       "direct": {
         "seller": "Emirates",
         "fare": null,
-        "price": 2904,
+        "price": 2903,
         "isAirline": true,
         "checkedBags": 2,
         "refund": null,
@@ -104,7 +104,7 @@
             "flightNumber": "538"
           }
         ],
-        "price": 2904
+        "price": 2903
       },
       "inbound": {
         "key": "EK541-EK241",
@@ -160,14 +160,14 @@
             "flightNumber": "241"
           }
         ],
-        "price": 2904
+        "price": 2903
       },
       "alternativeReturns": 0,
       "bookingOptions": [
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 2841,
+          "price": 2840,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -176,7 +176,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 2841,
+          "price": 2840,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -185,7 +185,7 @@
         {
           "seller": "Emirates",
           "fare": null,
-          "price": 2904,
+          "price": 2903,
           "isAirline": true,
           "checkedBags": 2,
           "refund": null,
@@ -224,24 +224,24 @@
       "airlines": [
         "Etihad"
       ],
-      "price": 3005,
+      "price": 3007,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "AranGrant",
         "fare": null,
-        "price": 3005,
+        "price": 3007,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 3030,
+      "googleListedPrice": 3418,
       "direct": {
         "seller": "Etihad",
         "fare": null,
-        "price": 3030,
+        "price": 3031,
         "isAirline": true,
         "checkedBags": null,
         "refund": null,
@@ -302,7 +302,7 @@
             "flightNumber": "246"
           }
         ],
-        "price": 3030
+        "price": 3418
       },
       "inbound": {
         "key": "EY241-EY21",
@@ -358,14 +358,14 @@
             "flightNumber": "21"
           }
         ],
-        "price": 3030
+        "price": 3418
       },
       "alternativeReturns": 1,
       "bookingOptions": [
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3005,
+          "price": 3007,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -374,7 +374,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3008,
+          "price": 3010,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -383,7 +383,7 @@
         {
           "seller": "Etihad",
           "fare": null,
-          "price": 3030,
+          "price": 3031,
           "isAirline": true,
           "checkedBags": null,
           "refund": null,
@@ -392,7 +392,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 3098,
+          "price": 3099,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -401,7 +401,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 3098,
+          "price": 3099,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -410,7 +410,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 3150,
+          "price": 3151,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -432,13 +432,13 @@
         "Emirates",
         "flydubai"
       ],
-      "price": 3063,
+      "price": 3064,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
-        "price": 3063,
+        "price": 3064,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -572,18 +572,18 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
-          "price": 3063,
+          "price": 3064,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
-          "price": 3063,
+          "price": 3064,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -601,7 +601,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3191,
+          "price": 3192,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -610,7 +610,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3404,
+          "price": 3405,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -631,222 +631,6 @@
       ]
     },
     {
-      "id": "EY22-EY240_EY241-EY21",
-      "airlines": [
-        "Etihad"
-      ],
-      "price": 3084,
-      "checkedBags": 2,
-      "bagsVerified": true,
-      "cheapest": {
-        "seller": "wego",
-        "fare": null,
-        "price": 3084,
-        "isAirline": false,
-        "checkedBags": 2,
-        "refund": null,
-        "changes": null
-      },
-      "cheapestAnyBags": null,
-      "googleListedPrice": 3214,
-      "direct": {
-        "seller": "Etihad",
-        "fare": null,
-        "price": 3214,
-        "isAirline": true,
-        "checkedBags": null,
-        "refund": null,
-        "changes": null
-      },
-      "refundable": null,
-      "outbound": {
-        "key": "EY22-EY240",
-        "airlines": [
-          "Etihad"
-        ],
-        "from": "YYZ",
-        "to": "AMD",
-        "departDate": "2027-01-10",
-        "departTime": "2:45 PM",
-        "arriveDate": "2027-01-11",
-        "arriveTime": "6:15 PM",
-        "arriveDayOffset": 1,
-        "durationMin": 1020,
-        "stops": 1,
-        "layovers": [
-          {
-            "minutes": 90,
-            "airport": "AUH",
-            "airportName": "Zayed International Airport",
-            "city": "Abu Dhabi"
-          }
-        ],
-        "legs": [
-          {
-            "from": "YYZ",
-            "fromName": "Toronto Pearson International Airport",
-            "to": "AUH",
-            "toName": "Zayed International Airport",
-            "departDate": "2027-01-10",
-            "departTime": "2:45 PM",
-            "arriveDate": "2027-01-11",
-            "arriveTime": "12:35 PM",
-            "durationMin": 770,
-            "aircraft": "Airbus A380",
-            "airline": "EY",
-            "airlineName": "Etihad",
-            "flightNumber": "22"
-          },
-          {
-            "from": "AUH",
-            "fromName": "Zayed International Airport",
-            "to": "AMD",
-            "toName": "Sardar Vallabhbhai Patel International Airport",
-            "departDate": "2027-01-11",
-            "departTime": "2:05 PM",
-            "arriveDate": "2027-01-11",
-            "arriveTime": "6:15 PM",
-            "durationMin": 160,
-            "aircraft": "Airbus A321",
-            "airline": "EY",
-            "airlineName": "Etihad",
-            "flightNumber": "240"
-          }
-        ],
-        "price": 3214
-      },
-      "inbound": {
-        "key": "EY241-EY21",
-        "airlines": [
-          "Etihad"
-        ],
-        "from": "AMD",
-        "to": "YYZ",
-        "departDate": "2027-02-06",
-        "departTime": "9:00 PM",
-        "arriveDate": "2027-02-07",
-        "arriveTime": "9:20 AM",
-        "arriveDayOffset": 1,
-        "durationMin": 1370,
-        "stops": 1,
-        "layovers": [
-          {
-            "minutes": 280,
-            "airport": "AUH",
-            "airportName": "Zayed International Airport",
-            "city": "Abu Dhabi"
-          }
-        ],
-        "legs": [
-          {
-            "from": "AMD",
-            "fromName": "Sardar Vallabhbhai Patel International Airport",
-            "to": "AUH",
-            "toName": "Zayed International Airport",
-            "departDate": "2027-02-06",
-            "departTime": "9:00 PM",
-            "arriveDate": "2027-02-06",
-            "arriveTime": "10:40 PM",
-            "durationMin": 190,
-            "aircraft": "Airbus A321",
-            "airline": "EY",
-            "airlineName": "Etihad",
-            "flightNumber": "241"
-          },
-          {
-            "from": "AUH",
-            "fromName": "Zayed International Airport",
-            "to": "YYZ",
-            "toName": "Toronto Pearson International Airport",
-            "departDate": "2027-02-07",
-            "departTime": "3:20 AM",
-            "arriveDate": "2027-02-07",
-            "arriveTime": "9:20 AM",
-            "durationMin": 900,
-            "aircraft": "Airbus A380",
-            "airline": "EY",
-            "airlineName": "Etihad",
-            "flightNumber": "21"
-          }
-        ],
-        "price": 3214
-      },
-      "alternativeReturns": 0,
-      "bookingOptions": [
-        {
-          "seller": "wego",
-          "fare": null,
-          "price": 3084,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
-          "seller": "AranGrant",
-          "fare": null,
-          "price": 3204,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
-          "seller": "Ovago",
-          "fare": null,
-          "price": 3207,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
-          "seller": "Etihad",
-          "fare": null,
-          "price": 3214,
-          "isAirline": true,
-          "checkedBags": null,
-          "refund": null,
-          "changes": null
-        },
-        {
-          "seller": "FlightHub",
-          "fare": null,
-          "price": 3304,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
-          "seller": "Justfly.com",
-          "fare": null,
-          "price": 3304,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
-          "seller": "Gotogate",
-          "fare": null,
-          "price": 3356,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        }
-      ],
-      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJBVUgiLCJFWSIsIjIyIl0sWyJBVUgiLCIyMDI3LTAxLTExIiwiQU1EIiwiRVkiLCIyNDAiXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkFVSCIsIkVZIiwiMjQxIl0sWyJBVUgiLCIyMDI3LTAyLTA3IiwiWVlaIiwiRVkiLCIyMSJdXV0",
-      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNBVUgqAkVZMgIyMiIfCgNBVUgSCjIwMjctMDEtMTEaA0FNRCoCRVkyAzI0MGoFEgNZWVpyBRIDQU1EGlsSCjIwMjctMDItMDYiHwoDQU1EEgoyMDI3LTAyLTA2GgNBVUgqAkVZMgMyNDEiHgoDQVVIEgoyMDI3LTAyLTA3GgNZWVoqAkVZMgIyMWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
-      "baggagePolicyUrls": [
-        {
-          "airline": "EY",
-          "url": "https://www.etihad.com/en/fly-etihad/baggage"
-        }
-      ]
-    },
-    {
       "id": "QR768-QR534_QR535-QR767",
       "airlines": [
         "Qatar Airways"
@@ -855,7 +639,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 3980,
         "isAirline": false,
@@ -864,11 +648,11 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 4025,
+      "googleListedPrice": 4024,
       "direct": {
         "seller": "Qatar Airways",
         "fare": null,
-        "price": 4025,
+        "price": 4024,
         "isAirline": true,
         "checkedBags": 2,
         "refund": null,
@@ -929,7 +713,7 @@
             "flightNumber": "534"
           }
         ],
-        "price": 4025
+        "price": 4024
       },
       "inbound": {
         "key": "QR535-QR767",
@@ -985,19 +769,10 @@
             "flightNumber": "767"
           }
         ],
-        "price": 4025
+        "price": 4024
       },
       "alternativeReturns": 0,
       "bookingOptions": [
-        {
-          "seller": "FlightHub",
-          "fare": null,
-          "price": 3980,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
         {
           "seller": "Justfly.com",
           "fare": null,
@@ -1008,9 +783,18 @@
           "changes": null
         },
         {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 3980,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
           "seller": "Qatar Airways",
           "fare": null,
-          "price": 4025,
+          "price": 4024,
           "isAirline": true,
           "checkedBags": 2,
           "refund": null,
@@ -1019,7 +803,7 @@
         {
           "seller": "wego",
           "fare": null,
-          "price": 4025,
+          "price": 4024,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1028,7 +812,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 4025,
+          "price": 4024,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1037,7 +821,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 4057,
+          "price": 4056,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1068,13 +852,13 @@
         "Etihad",
         "Air Arabia"
       ],
-      "price": 4075,
+      "price": 4067,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "AranGrant",
         "fare": null,
-        "price": 4075,
+        "price": 4067,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -1085,7 +869,7 @@
       "direct": {
         "seller": "Etihad",
         "fare": null,
-        "price": 4118,
+        "price": 4109,
         "isAirline": true,
         "checkedBags": null,
         "refund": null,
@@ -1210,7 +994,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 4075,
+          "price": 4067,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1219,7 +1003,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 4080,
+          "price": 4071,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1228,7 +1012,7 @@
         {
           "seller": "Etihad",
           "fare": null,
-          "price": 4118,
+          "price": 4109,
           "isAirline": true,
           "checkedBags": null,
           "refund": null,
@@ -1237,7 +1021,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 4208,
+          "price": 4199,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1246,7 +1030,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 4208,
+          "price": 4199,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1255,7 +1039,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 4260,
+          "price": 4251,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1445,6 +1229,15 @@
           "checkedBags": 1,
           "refund": "Non-refundable",
           "changes": "Changes for a fee"
+        },
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 3946,
+          "isAirline": false,
+          "checkedBags": 1,
+          "refund": null,
+          "changes": null
         },
         {
           "seller": "Justfly.com",
@@ -1643,7 +1436,7 @@
     "name": "Air India",
     "hub": "DEL",
     "roundTrip": {
-      "price": 2904,
+      "price": 2905,
       "typicalRange": [
         2050,
         2750
@@ -1666,7 +1459,7 @@
     }
   },
   "partial": false,
-  "rejectedCount": 0,
+  "rejectedCount": 1,
   "searchUrl": "https://www.google.com/travel/flights/search?tfs=GhwSCjIwMjctMDEtMTAoAWoFEgNZWVpyBRIDQU1EGhwSCjIwMjctMDItMDYoAWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
   "errors": []
 }
