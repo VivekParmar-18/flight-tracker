@@ -807,5 +807,23 @@
       "QR768-QR534_QR535-QR767": 4250,
       "EY22-3L111_EY241-EY21": 4265
     }
+  },
+  {
+    "timestamp": "2026-10-03T21:53:04.446Z",
+    "bestPrice": 3067,
+    "bestAirlines": [
+      "Emirates",
+      "flydubai"
+    ],
+    "bestSeller": "Justfly.com",
+    "matches": 6,
+    "prices": {
+      "EK242-FZ437_EK541-EK241": 3067,
+      "EK242-EK538_EK541-EK241": 3067,
+      "EY22-EY240_EY247-EY21": 3208,
+      "AC42-AI817_AI2938-AC43": 3481,
+      "QR768-QR534_QR535-QR767": 4250,
+      "EY22-3L111_EY241-EY21": 4265
+    }
   }
 ]
