@@ -753,5 +753,23 @@
       "QR768-QR534_QR535-QR767": 3980,
       "EY22-3L111_EY241-EY21": 4068
     }
+  },
+  {
+    "timestamp": "2026-10-03T08:39:26.141Z",
+    "bestPrice": 3009,
+    "bestAirlines": [
+      "Etihad"
+    ],
+    "bestSeller": "AranGrant",
+    "matches": 7,
+    "prices": {
+      "EY22-EY246_EY241-EY21": 3009,
+      "EK242-EK538_EK541-EK241": 3067,
+      "EK242-FZ437_EK541-EK241": 3067,
+      "EY22-EY240_EY241-EY21": 3088,
+      "AC42-AI817_AI2938-AC43": 3481,
+      "QR768-QR534_QR535-QR767": 3981,
+      "EY22-3L111_EY241-EY21": 4070
+    }
   }
 ]
