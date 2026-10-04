@@ -1,6 +1,6 @@
 {
-  "id": "1791095359306",
-  "timestamp": "2026-10-04T06:29:18.937Z",
+  "id": "1791118509335",
+  "timestamp": "2026-10-04T12:55:09.155Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -441,7 +441,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -576,7 +576,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -585,7 +585,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -1091,7 +1091,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 4250,
         "isAirline": false,
@@ -1226,7 +1226,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4250,
           "isAirline": false,
@@ -1235,7 +1235,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4250,
           "isAirline": false,
@@ -1431,33 +1431,7 @@
     2350,
     3250
   ],
-  "reference": {
-    "code": "AI",
-    "name": "Air India",
-    "hub": "DEL",
-    "roundTrip": {
-      "price": 2907,
-      "typicalRange": [
-        2050,
-        2750
-      ],
-      "flights": [
-        "AI 188"
-      ],
-      "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUwaHhIKMjAyNy0wMi0wNjICQUlqBRIDREVMcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD"
-    },
-    "oneWay": {
-      "price": 1957,
-      "typicalRange": [
-        1300,
-        1900
-      ],
-      "flights": [
-        "AI 188"
-      ],
-      "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUxAAUgBmAEC&hl=en&gl=CA&curr=CAD"
-    }
-  },
+  "reference": null,
   "partial": false,
   "rejectedCount": 0,
   "searchUrl": "https://www.google.com/travel/flights/search?tfs=GhwSCjIwMjctMDEtMTAoAWoFEgNZWVpyBRIDQU1EGhwSCjIwMjctMDItMDYoAWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
