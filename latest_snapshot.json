@@ -1,6 +1,6 @@
 {
-  "id": "1791118509335",
-  "timestamp": "2026-10-04T12:55:09.155Z",
+  "id": "1791133763597",
+  "timestamp": "2026-10-04T17:09:23.208Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -1087,24 +1087,24 @@
       "airlines": [
         "Qatar Airways"
       ],
-      "price": 4250,
+      "price": 4518,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
-        "price": 4250,
+        "price": 4518,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 4297,
+      "googleListedPrice": 4568,
       "direct": {
         "seller": "Qatar Airways",
         "fare": null,
-        "price": 4297,
+        "price": 4568,
         "isAirline": true,
         "checkedBags": 2,
         "refund": null,
@@ -1165,7 +1165,7 @@
             "flightNumber": "534"
           }
         ],
-        "price": 4297
+        "price": 4568
       },
       "inbound": {
         "key": "QR535-QR767",
@@ -1221,23 +1221,23 @@
             "flightNumber": "767"
           }
         ],
-        "price": 4297
+        "price": 4568
       },
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
-          "price": 4250,
+          "price": 4518,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
-          "price": 4250,
+          "price": 4518,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1246,7 +1246,7 @@
         {
           "seller": "Qatar Airways",
           "fare": null,
-          "price": 4297,
+          "price": 4568,
           "isAirline": true,
           "checkedBags": 2,
           "refund": null,
@@ -1255,7 +1255,7 @@
         {
           "seller": "wego",
           "fare": null,
-          "price": 4297,
+          "price": 4568,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1264,7 +1264,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 4297,
+          "price": 4568,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1273,7 +1273,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 4329,
+          "price": 4600,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1282,7 +1282,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 4439,
+          "price": 4710,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1431,7 +1431,33 @@
     2350,
     3250
   ],
-  "reference": null,
+  "reference": {
+    "code": "AI",
+    "name": "Air India",
+    "hub": "DEL",
+    "roundTrip": {
+      "price": 2907,
+      "typicalRange": [
+        2050,
+        2750
+      ],
+      "flights": [
+        "AI 188"
+      ],
+      "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUwaHhIKMjAyNy0wMi0wNjICQUlqBRIDREVMcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD"
+    },
+    "oneWay": {
+      "price": 1957,
+      "typicalRange": [
+        1300,
+        1900
+      ],
+      "flights": [
+        "AI 188"
+      ],
+      "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUxAAUgBmAEC&hl=en&gl=CA&curr=CAD"
+    }
+  },
   "partial": false,
   "rejectedCount": 0,
   "searchUrl": "https://www.google.com/travel/flights/search?tfs=GhwSCjIwMjctMDEtMTAoAWoFEgNZWVpyBRIDQU1EGhwSCjIwMjctMDItMDYoAWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
