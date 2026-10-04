@@ -1,6 +1,6 @@
 {
-  "id": "1791133763597",
-  "timestamp": "2026-10-04T17:09:23.208Z",
+  "id": "1791146054977",
+  "timestamp": "2026-10-04T20:34:14.337Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -238,7 +238,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -374,7 +374,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -383,7 +383,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -441,7 +441,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -576,7 +576,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -585,7 +585,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
