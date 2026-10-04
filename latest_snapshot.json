@@ -1,6 +1,6 @@
 {
-  "id": "1791146054977",
-  "timestamp": "2026-10-04T20:34:14.337Z",
+  "id": "1791157223472",
+  "timestamp": "2026-10-04T23:40:23.037Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -441,7 +441,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -576,7 +576,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -585,7 +585,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -802,7 +802,7 @@
           "changes": "Changes for a fee"
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3221,
           "isAirline": false,
@@ -811,7 +811,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3221,
           "isAirline": false,
@@ -1091,7 +1091,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 4518,
         "isAirline": false,
@@ -1226,7 +1226,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4518,
           "isAirline": false,
@@ -1235,7 +1235,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4518,
           "isAirline": false,
