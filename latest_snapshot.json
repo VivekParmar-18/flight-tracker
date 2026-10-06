@@ -1,6 +1,6 @@
 {
-  "id": "1791313849268",
-  "timestamp": "2026-10-06T19:10:48.949Z",
+  "id": "1791329095364",
+  "timestamp": "2026-10-06T23:24:54.952Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -441,7 +441,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -576,7 +576,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -585,7 +585,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -888,7 +888,7 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 3928,
+      "googleListedPrice": 3929,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -954,7 +954,7 @@
             "flightNumber": "111"
           }
         ],
-        "price": 3928
+        "price": 3929
       },
       "inbound": {
         "key": "EY247-EY21",
@@ -1010,7 +1010,7 @@
             "flightNumber": "21"
           }
         ],
-        "price": 3928
+        "price": 3929
       },
       "alternativeReturns": 1,
       "bookingOptions": [
@@ -1087,24 +1087,24 @@
       "airlines": [
         "Qatar Airways"
       ],
-      "price": 4250,
+      "price": 3981,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "Justfly.com",
         "fare": null,
-        "price": 4250,
+        "price": 3981,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 4297,
+      "googleListedPrice": 4025,
       "direct": {
         "seller": "Qatar Airways",
         "fare": null,
-        "price": 4297,
+        "price": 4025,
         "isAirline": true,
         "checkedBags": 2,
         "refund": null,
@@ -1165,7 +1165,7 @@
             "flightNumber": "534"
           }
         ],
-        "price": 4297
+        "price": 4025
       },
       "inbound": {
         "key": "QR535-QR767",
@@ -1221,14 +1221,14 @@
             "flightNumber": "767"
           }
         ],
-        "price": 4297
+        "price": 4025
       },
       "alternativeReturns": 0,
       "bookingOptions": [
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 4250,
+          "price": 3981,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1237,7 +1237,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 4250,
+          "price": 3981,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1246,7 +1246,7 @@
         {
           "seller": "Qatar Airways",
           "fare": null,
-          "price": 4297,
+          "price": 4025,
           "isAirline": true,
           "checkedBags": 2,
           "refund": null,
@@ -1255,7 +1255,7 @@
         {
           "seller": "wego",
           "fare": null,
-          "price": 4297,
+          "price": 4025,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1264,7 +1264,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 4297,
+          "price": 4025,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1273,7 +1273,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 4329,
+          "price": 4057,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1282,7 +1282,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 4440,
+          "price": 4168,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
