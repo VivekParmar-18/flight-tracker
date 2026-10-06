@@ -1,6 +1,6 @@
 {
-  "id": "1791246385461",
-  "timestamp": "2026-10-06T00:26:25.123Z",
+  "id": "1791269891524",
+  "timestamp": "2026-10-06T06:58:11.073Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -11,13 +11,13 @@
     "dateTo": "2027-02-06",
     "currency": "CAD"
   },
-  "bestPrice": 3009,
+  "bestPrice": 3010,
   "best": {
     "id": "EY22-EY240_EY247-EY21",
     "airlines": [
       "Etihad"
     ],
-    "price": 3009,
+    "price": 3010,
     "seller": "AranGrant"
   },
   "options": [
@@ -26,13 +26,13 @@
       "airlines": [
         "Etihad"
       ],
-      "price": 3009,
+      "price": 3010,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "AranGrant",
         "fare": null,
-        "price": 3009,
+        "price": 3010,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -43,7 +43,7 @@
       "direct": {
         "seller": "Etihad",
         "fare": null,
-        "price": 3034,
+        "price": 3035,
         "isAirline": true,
         "checkedBags": null,
         "refund": null,
@@ -167,7 +167,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3009,
+          "price": 3010,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -176,7 +176,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3012,
+          "price": 3013,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -185,7 +185,7 @@
         {
           "seller": "Etihad",
           "fare": null,
-          "price": 3034,
+          "price": 3035,
           "isAirline": true,
           "checkedBags": null,
           "refund": null,
@@ -194,7 +194,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 3102,
+          "price": 3103,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -203,7 +203,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 3102,
+          "price": 3103,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -212,7 +212,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 3154,
+          "price": 3155,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -403,7 +403,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3194,
+          "price": 3195,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -412,7 +412,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3408,
+          "price": 3409,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -605,7 +605,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3194,
+          "price": 3195,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -614,7 +614,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3408,
+          "price": 3409,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -636,13 +636,13 @@
         "Air Canada",
         "Air India"
       ],
-      "price": 3323,
+      "price": 3481,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 3323,
+        "price": 3481,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -651,17 +651,17 @@
       "cheapestAnyBags": {
         "seller": "Air Canada",
         "fare": "Standard",
-        "price": 3058,
+        "price": 3221,
         "isAirline": true,
         "checkedBags": 1,
         "refund": "Non-refundable",
         "changes": "Changes for a fee"
       },
-      "googleListedPrice": 3058,
+      "googleListedPrice": 3221,
       "direct": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 3323,
+        "price": 3481,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -670,7 +670,7 @@
       "refundable": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 3323,
+        "price": 3481,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -731,7 +731,7 @@
             "flightNumber": "817"
           }
         ],
-        "price": 3058
+        "price": 3221
       },
       "inbound": {
         "key": "AI2938-AC43",
@@ -788,14 +788,14 @@
             "flightNumber": "43"
           }
         ],
-        "price": 3058
+        "price": 3221
       },
       "alternativeReturns": 0,
       "bookingOptions": [
         {
           "seller": "Air Canada",
           "fare": "Standard",
-          "price": 3058,
+          "price": 3221,
           "isAirline": true,
           "checkedBags": 1,
           "refund": "Non-refundable",
@@ -804,7 +804,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 3058,
+          "price": 3221,
           "isAirline": false,
           "checkedBags": 1,
           "refund": null,
@@ -813,7 +813,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 3058,
+          "price": 3221,
           "isAirline": false,
           "checkedBags": 1,
           "refund": null,
@@ -822,7 +822,7 @@
         {
           "seller": "Air Canada",
           "fare": "Flex",
-          "price": 3323,
+          "price": 3481,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Partial refund",
@@ -831,7 +831,7 @@
         {
           "seller": "Air Canada",
           "fare": "Comfort",
-          "price": 3533,
+          "price": 3701,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Refundable",
@@ -875,13 +875,13 @@
         "Etihad",
         "Air Arabia"
       ],
-      "price": 3871,
+      "price": 3872,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "AranGrant",
         "fare": null,
-        "price": 3871,
+        "price": 3872,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -892,7 +892,7 @@
       "direct": {
         "seller": "Etihad",
         "fare": null,
-        "price": 3928,
+        "price": 3929,
         "isAirline": true,
         "checkedBags": null,
         "refund": null,
@@ -1017,7 +1017,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3871,
+          "price": 3872,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1026,7 +1026,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3875,
+          "price": 3876,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1035,7 +1035,7 @@
         {
           "seller": "Etihad",
           "fare": null,
-          "price": 3928,
+          "price": 3929,
           "isAirline": true,
           "checkedBags": null,
           "refund": null,
@@ -1044,7 +1044,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 3996,
+          "price": 3997,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1053,7 +1053,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 3996,
+          "price": 3997,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1062,7 +1062,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 4048,
+          "price": 4049,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1282,7 +1282,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 4439,
+          "price": 4440,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1436,7 +1436,7 @@
     "name": "Air India",
     "hub": "DEL",
     "roundTrip": {
-      "price": 2907,
+      "price": 2908,
       "typicalRange": [
         2050,
         2750
