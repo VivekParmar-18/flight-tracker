@@ -1,6 +1,6 @@
 {
-  "id": "1791392654847",
-  "timestamp": "2026-10-07T17:04:14.435Z",
+  "id": "1791411713419",
+  "timestamp": "2026-10-07T22:21:53.035Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -442,7 +442,7 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 3219,
+      "googleListedPrice": 3239,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -507,7 +507,7 @@
             "flightNumber": "240"
           }
         ],
-        "price": 3219
+        "price": 3239
       },
       "inbound": {
         "key": "EY241-EY21",
@@ -563,7 +563,7 @@
             "flightNumber": "21"
           }
         ],
-        "price": 3219
+        "price": 3239
       },
       "alternativeReturns": 0,
       "bookingOptions": [
