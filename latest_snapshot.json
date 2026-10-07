@@ -1,6 +1,6 @@
 {
-  "id": "1791366848914",
-  "timestamp": "2026-10-07T09:54:08.511Z",
+  "id": "1791392654847",
+  "timestamp": "2026-10-07T17:04:14.435Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -19,7 +19,7 @@
       "flydubai"
     ],
     "price": 3067,
-    "seller": "FlightHub"
+    "seller": "Justfly.com"
   },
   "options": [
     {
@@ -32,7 +32,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -168,7 +168,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -177,7 +177,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -429,13 +429,13 @@
       "airlines": [
         "Etihad"
       ],
-      "price": 3089,
+      "price": 3107,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "wego",
         "fare": null,
-        "price": 3089,
+        "price": 3107,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -446,7 +446,7 @@
       "direct": {
         "seller": "Etihad",
         "fare": null,
-        "price": 3219,
+        "price": 3239,
         "isAirline": true,
         "checkedBags": null,
         "refund": null,
@@ -570,7 +570,7 @@
         {
           "seller": "wego",
           "fare": null,
-          "price": 3089,
+          "price": 3107,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -579,7 +579,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3209,
+          "price": 3228,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -588,7 +588,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3212,
+          "price": 3232,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -597,7 +597,7 @@
         {
           "seller": "Etihad",
           "fare": null,
-          "price": 3219,
+          "price": 3239,
           "isAirline": true,
           "checkedBags": null,
           "refund": null,
@@ -606,7 +606,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 3309,
+          "price": 3329,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -615,7 +615,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 3309,
+          "price": 3329,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -624,7 +624,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 3361,
+          "price": 3381,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -646,13 +646,13 @@
         "Air Canada",
         "Air India"
       ],
-      "price": 3498,
+      "price": 3656,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 3498,
+        "price": 3656,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -661,17 +661,17 @@
       "cheapestAnyBags": {
         "seller": "Air Canada",
         "fare": "Standard",
-        "price": 3233,
+        "price": 3396,
         "isAirline": true,
         "checkedBags": 1,
         "refund": "Non-refundable",
         "changes": "Changes for a fee"
       },
-      "googleListedPrice": 3233,
+      "googleListedPrice": 3396,
       "direct": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 3498,
+        "price": 3656,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -680,7 +680,7 @@
       "refundable": {
         "seller": "Air Canada",
         "fare": "Flex",
-        "price": 3498,
+        "price": 3656,
         "isAirline": true,
         "checkedBags": 2,
         "refund": "Partial refund",
@@ -741,7 +741,7 @@
             "flightNumber": "817"
           }
         ],
-        "price": 3233
+        "price": 3396
       },
       "inbound": {
         "key": "AI2938-AC43",
@@ -798,14 +798,14 @@
             "flightNumber": "43"
           }
         ],
-        "price": 3233
+        "price": 3396
       },
       "alternativeReturns": 0,
       "bookingOptions": [
         {
           "seller": "Air Canada",
           "fare": "Standard",
-          "price": 3233,
+          "price": 3396,
           "isAirline": true,
           "checkedBags": 1,
           "refund": "Non-refundable",
@@ -814,7 +814,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 3233,
+          "price": 3396,
           "isAirline": false,
           "checkedBags": 1,
           "refund": null,
@@ -823,7 +823,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 3233,
+          "price": 3396,
           "isAirline": false,
           "checkedBags": 1,
           "refund": null,
@@ -832,7 +832,7 @@
         {
           "seller": "Air Canada",
           "fare": "Flex",
-          "price": 3498,
+          "price": 3656,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Partial refund",
@@ -841,7 +841,7 @@
         {
           "seller": "Air Canada",
           "fare": "Comfort",
-          "price": 3708,
+          "price": 3876,
           "isAirline": true,
           "checkedBags": 2,
           "refund": "Refundable",
@@ -885,13 +885,13 @@
         "Etihad",
         "Air Arabia"
       ],
-      "price": 4071,
+      "price": 4089,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "AranGrant",
         "fare": null,
-        "price": 4071,
+        "price": 4089,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -902,7 +902,7 @@
       "direct": {
         "seller": "Etihad",
         "fare": null,
-        "price": 4113,
+        "price": 4133,
         "isAirline": true,
         "checkedBags": null,
         "refund": null,
@@ -1027,7 +1027,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 4071,
+          "price": 4089,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1036,7 +1036,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 4075,
+          "price": 4093,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1045,7 +1045,7 @@
         {
           "seller": "Etihad",
           "fare": null,
-          "price": 4113,
+          "price": 4133,
           "isAirline": true,
           "checkedBags": null,
           "refund": null,
@@ -1054,7 +1054,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 4203,
+          "price": 4222,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1063,7 +1063,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 4203,
+          "price": 4222,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1072,7 +1072,7 @@
         {
           "seller": "Gotogate",
           "fare": null,
-          "price": 4255,
+          "price": 4274,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1089,6 +1089,222 @@
         {
           "airline": "3L",
           "url": "https://www.airarabia.com/en/checked-and-hand-baggages"
+        }
+      ]
+    },
+    {
+      "id": "QR768-QR534_QR535-QR767",
+      "airlines": [
+        "Qatar Airways"
+      ],
+      "price": 4518,
+      "checkedBags": 2,
+      "bagsVerified": true,
+      "cheapest": {
+        "seller": "FlightHub",
+        "fare": null,
+        "price": 4518,
+        "isAirline": false,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "cheapestAnyBags": null,
+      "googleListedPrice": 4568,
+      "direct": {
+        "seller": "Qatar Airways",
+        "fare": null,
+        "price": 4568,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": null,
+        "changes": null
+      },
+      "refundable": null,
+      "outbound": {
+        "key": "QR768-QR534",
+        "airlines": [
+          "Qatar Airways"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "8:10 PM",
+        "arriveDate": "2027-01-12",
+        "arriveTime": "1:30 AM",
+        "arriveDayOffset": 2,
+        "durationMin": 1130,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 195,
+            "airport": "DOH",
+            "airportName": "Hamad International Airport",
+            "city": "Doha"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "DOH",
+            "toName": "Hamad International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "8:10 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "4:45 PM",
+            "durationMin": 755,
+            "aircraft": "Airbus A350",
+            "airline": "QR",
+            "airlineName": "Qatar Airways",
+            "flightNumber": "768"
+          },
+          {
+            "from": "DOH",
+            "fromName": "Hamad International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-11",
+            "departTime": "8:00 PM",
+            "arriveDate": "2027-01-12",
+            "arriveTime": "1:30 AM",
+            "durationMin": 180,
+            "aircraft": "Airbus A320",
+            "airline": "QR",
+            "airlineName": "Qatar Airways",
+            "flightNumber": "534"
+          }
+        ],
+        "price": 4568
+      },
+      "inbound": {
+        "key": "QR535-QR767",
+        "airlines": [
+          "Qatar Airways"
+        ],
+        "from": "AMD",
+        "to": "YYZ",
+        "departDate": "2027-02-06",
+        "departTime": "3:00 AM",
+        "arriveDate": "2027-02-06",
+        "arriveTime": "2:30 PM",
+        "arriveDayOffset": 0,
+        "durationMin": 1320,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 260,
+            "airport": "DOH",
+            "airportName": "Hamad International Airport",
+            "city": "Doha"
+          }
+        ],
+        "legs": [
+          {
+            "from": "AMD",
+            "fromName": "Sardar Vallabhbhai Patel International Airport",
+            "to": "DOH",
+            "toName": "Hamad International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "3:00 AM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "4:10 AM",
+            "durationMin": 220,
+            "aircraft": "Airbus A320",
+            "airline": "QR",
+            "airlineName": "Qatar Airways",
+            "flightNumber": "535"
+          },
+          {
+            "from": "DOH",
+            "fromName": "Hamad International Airport",
+            "to": "YYZ",
+            "toName": "Toronto Pearson International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "8:30 AM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "2:30 PM",
+            "durationMin": 840,
+            "aircraft": "Airbus A350",
+            "airline": "QR",
+            "airlineName": "Qatar Airways",
+            "flightNumber": "767"
+          }
+        ],
+        "price": 4568
+      },
+      "alternativeReturns": 0,
+      "bookingOptions": [
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 4518,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 4518,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Qatar Airways",
+          "fare": null,
+          "price": 4568,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "wego",
+          "fare": null,
+          "price": 4568,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Ovago",
+          "fare": null,
+          "price": 4568,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Gotogate",
+          "fare": null,
+          "price": 4600,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "AranGrant",
+          "fare": null,
+          "price": 4711,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        }
+      ],
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJET0giLCJRUiIsIjc2OCJdLFsiRE9IIiwiMjAyNy0wMS0xMSIsIkFNRCIsIlFSIiwiNTM0Il1dLFtbIkFNRCIsIjIwMjctMDItMDYiLCJET0giLCJRUiIsIjUzNSJdLFsiRE9IIiwiMjAyNy0wMi0wNiIsIllZWiIsIlFSIiwiNzY3Il1dXQ",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlwSCjIwMjctMDEtMTAiHwoDWVlaEgoyMDI3LTAxLTEwGgNET0gqAlFSMgM3NjgiHwoDRE9IEgoyMDI3LTAxLTExGgNBTUQqAlFSMgM1MzRqBRIDWVlacgUSA0FNRBpcEgoyMDI3LTAyLTA2Ih8KA0FNRBIKMjAyNy0wMi0wNhoDRE9IKgJRUjIDNTM1Ih8KA0RPSBIKMjAyNy0wMi0wNhoDWVlaKgJRUjIDNzY3agUSA0FNRHIFEgNZWVpAAUgBmAEB&hl=en&gl=CA&curr=CAD",
+      "baggagePolicyUrls": [
+        {
+          "airline": "QR",
+          "url": "https://www.qatarairways.com/en-us/baggage/allowance.html"
         }
       ]
     }
@@ -1252,10 +1468,8 @@
       "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUxAAUgBmAEC&hl=en&gl=CA&curr=CAD"
     }
   },
-  "partial": true,
+  "partial": false,
   "rejectedCount": 0,
   "searchUrl": "https://www.google.com/travel/flights/search?tfs=GhwSCjIwMjctMDEtMTAoAWoFEgNZWVpyBRIDQU1EGhwSCjIwMjctMDItMDYoAWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
-  "errors": [
-    "The operation was aborted due to timeout"
-  ]
+  "errors": []
 }
