@@ -1048,5 +1048,22 @@
       "EY22-3L111_EY247-EY21": 3872,
       "QR768-QR534_QR535-QR767": 3981
     }
+  },
+  {
+    "timestamp": "2026-10-07T02:59:49.034Z",
+    "bestPrice": 2844,
+    "bestAirlines": [
+      "Emirates"
+    ],
+    "bestSeller": "Justfly.com",
+    "matches": 6,
+    "prices": {
+      "EK242-EK538_EK541-EK241": 2844,
+      "EK242-FZ437_EK541-EK241": 3067,
+      "EY22-EY240_EY241-EY21": 3089,
+      "AC42-AI817_AI2938-AC43": 3498,
+      "EY22-3L111_EY247-EY21": 4071,
+      "QR768-QR534_QR535-QR767": 4250
+    }
   }
 ]
