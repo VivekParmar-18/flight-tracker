@@ -1,6 +1,6 @@
 {
-  "id": "1791539056816",
-  "timestamp": "2026-10-09T09:44:16.403Z",
+  "id": "1791564026765",
+  "timestamp": "2026-10-09T16:40:26.267Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -19,7 +19,7 @@
       "flydubai"
     ],
     "price": 3066,
-    "seller": "Justfly.com"
+    "seller": "FlightHub"
   },
   "options": [
     {
@@ -32,7 +32,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 3066,
         "isAirline": false,
@@ -168,7 +168,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3066,
           "isAirline": false,
@@ -177,7 +177,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3066,
           "isAirline": false,
@@ -1101,7 +1101,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 4517,
         "isAirline": false,
@@ -1236,7 +1236,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4517,
           "isAirline": false,
@@ -1245,7 +1245,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4517,
           "isAirline": false,
