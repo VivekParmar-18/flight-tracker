@@ -1,6 +1,6 @@
 {
-  "id": "1791498865691",
-  "timestamp": "2026-10-08T22:34:25.179Z",
+  "id": "1791539056816",
+  "timestamp": "2026-10-09T09:44:16.403Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -11,15 +11,15 @@
     "dateTo": "2027-02-06",
     "currency": "CAD"
   },
-  "bestPrice": 3067,
+  "bestPrice": 3066,
   "best": {
     "id": "EK242-FZ437_EK541-EK241",
     "airlines": [
       "Emirates",
       "flydubai"
     ],
-    "price": 3067,
-    "seller": "FlightHub"
+    "price": 3066,
+    "seller": "Justfly.com"
   },
   "options": [
     {
@@ -28,13 +28,13 @@
         "Emirates",
         "flydubai"
       ],
-      "price": 3067,
+      "price": 3066,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
-        "price": 3067,
+        "price": 3066,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -168,18 +168,18 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
-          "price": 3067,
+          "price": 3066,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
-          "price": 3067,
+          "price": 3066,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -197,7 +197,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3195,
+          "price": 3194,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -231,13 +231,13 @@
       "airlines": [
         "Emirates"
       ],
-      "price": 3067,
+      "price": 3066,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "Justfly.com",
         "fare": null,
-        "price": 3067,
+        "price": 3066,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -372,7 +372,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 3067,
+          "price": 3066,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -381,7 +381,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 3067,
+          "price": 3066,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -399,7 +399,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3195,
+          "price": 3194,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -588,7 +588,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 3231,
+          "price": 3230,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -667,7 +667,7 @@
         "refund": "Non-refundable",
         "changes": "Changes for a fee"
       },
-      "googleListedPrice": 3233,
+      "googleListedPrice": 4033,
       "direct": {
         "seller": "Air Canada",
         "fare": "Flex",
@@ -703,7 +703,7 @@
         "stops": 1,
         "layovers": [
           {
-            "minutes": 485,
+            "minutes": 475,
             "airport": "DEL",
             "airportName": "Indira Gandhi International Airport",
             "city": "New Delhi"
@@ -731,17 +731,17 @@
             "to": "AMD",
             "toName": "Sardar Vallabhbhai Patel International Airport",
             "departDate": "2027-01-12",
-            "departTime": "5:55 AM",
+            "departTime": "5:45 AM",
             "arriveDate": "2027-01-12",
             "arriveTime": "7:35 AM",
-            "durationMin": 100,
+            "durationMin": 110,
             "aircraft": "Airbus A321",
             "airline": "AI",
             "airlineName": "Air India",
             "flightNumber": "817"
           }
         ],
-        "price": 3233
+        "price": 4033
       },
       "inbound": {
         "key": "AI2938-AC43",
@@ -798,7 +798,7 @@
             "flightNumber": "43"
           }
         ],
-        "price": 3233
+        "price": 4033
       },
       "alternativeReturns": 0,
       "bookingOptions": [
@@ -1036,7 +1036,7 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 4093,
+          "price": 4092,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1097,13 +1097,13 @@
       "airlines": [
         "Qatar Airways"
       ],
-      "price": 4518,
+      "price": 4517,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
         "seller": "FlightHub",
         "fare": null,
-        "price": 4518,
+        "price": 4517,
         "isAirline": false,
         "checkedBags": 2,
         "refund": null,
@@ -1238,7 +1238,7 @@
         {
           "seller": "FlightHub",
           "fare": null,
-          "price": 4518,
+          "price": 4517,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1247,7 +1247,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 4518,
+          "price": 4517,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -1446,7 +1446,7 @@
     "name": "Air India",
     "hub": "DEL",
     "roundTrip": {
-      "price": 2807,
+      "price": 2850,
       "typicalRange": [
         2050,
         2750
@@ -1457,7 +1457,7 @@
       "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUwaHhIKMjAyNy0wMi0wNjICQUlqBRIDREVMcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD"
     },
     "oneWay": {
-      "price": 1907,
+      "price": 1929,
       "typicalRange": [
         1300,
         1900
