@@ -1,6 +1,6 @@
 {
-  "id": "1791618615537",
-  "timestamp": "2026-10-10T07:50:15.187Z",
+  "id": "1791640953372",
+  "timestamp": "2026-10-10T14:02:32.885Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -11,14 +11,14 @@
     "dateTo": "2027-02-06",
     "currency": "CAD"
   },
-  "bestPrice": 2843,
+  "bestPrice": 2906,
   "best": {
     "id": "EK242-EK538_EK541-EK241",
     "airlines": [
       "Emirates"
     ],
-    "price": 2843,
-    "seller": "FlightHub"
+    "price": 2906,
+    "seller": "Emirates"
   },
   "options": [
     {
@@ -26,24 +26,24 @@
       "airlines": [
         "Emirates"
       ],
-      "price": 2843,
+      "price": 2906,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Emirates",
         "fare": null,
-        "price": 2843,
-        "isAirline": false,
+        "price": 2906,
+        "isAirline": true,
         "checkedBags": 2,
         "refund": null,
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 3139,
+      "googleListedPrice": 2906,
       "direct": {
         "seller": "Emirates",
         "fare": null,
-        "price": 3139,
+        "price": 2906,
         "isAirline": true,
         "checkedBags": 2,
         "refund": null,
@@ -104,7 +104,7 @@
             "flightNumber": "538"
           }
         ],
-        "price": 3139
+        "price": 2906
       },
       "inbound": {
         "key": "EK541-EK241",
@@ -160,14 +160,23 @@
             "flightNumber": "241"
           }
         ],
-        "price": 3139
+        "price": 2906
       },
       "alternativeReturns": 0,
       "bookingOptions": [
         {
+          "seller": "Emirates",
+          "fare": null,
+          "price": 2906,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
           "seller": "FlightHub",
           "fare": null,
-          "price": 2843,
+          "price": 3067,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -176,7 +185,7 @@
         {
           "seller": "Justfly.com",
           "fare": null,
-          "price": 2843,
+          "price": 3067,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -185,17 +194,8 @@
         {
           "seller": "Ovago",
           "fare": null,
-          "price": 2962,
+          "price": 3195,
           "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
-          "seller": "Emirates",
-          "fare": null,
-          "price": 3139,
-          "isAirline": true,
           "checkedBags": 2,
           "refund": null,
           "changes": null
@@ -203,7 +203,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3175,
+          "price": 3408,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -445,7 +445,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Justfly.com",
+        "seller": "FlightHub",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -581,7 +581,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -590,7 +590,7 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -640,6 +640,245 @@
       ]
     },
     {
+      "id": "AC42-AI817_AI2938-AC43",
+      "airlines": [
+        "Air Canada",
+        "Air India"
+      ],
+      "price": 3656,
+      "checkedBags": 2,
+      "bagsVerified": true,
+      "cheapest": {
+        "seller": "Air Canada",
+        "fare": "Flex",
+        "price": 3656,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": "Partial refund",
+        "changes": "Free changes"
+      },
+      "cheapestAnyBags": {
+        "seller": "Air Canada",
+        "fare": "Standard",
+        "price": 3396,
+        "isAirline": true,
+        "checkedBags": 1,
+        "refund": "Non-refundable",
+        "changes": "Changes for a fee"
+      },
+      "googleListedPrice": 3396,
+      "direct": {
+        "seller": "Air Canada",
+        "fare": "Flex",
+        "price": 3656,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": "Partial refund",
+        "changes": "Free changes"
+      },
+      "refundable": {
+        "seller": "Air Canada",
+        "fare": "Flex",
+        "price": 3656,
+        "isAirline": true,
+        "checkedBags": 2,
+        "refund": "Partial refund",
+        "changes": "Free changes"
+      },
+      "outbound": {
+        "key": "AC42-AI817",
+        "airlines": [
+          "Air Canada",
+          "Air India"
+        ],
+        "from": "YYZ",
+        "to": "AMD",
+        "departDate": "2027-01-10",
+        "departTime": "8:40 PM",
+        "arriveDate": "2027-01-12",
+        "arriveTime": "7:35 AM",
+        "arriveDayOffset": 2,
+        "durationMin": 1465,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 475,
+            "airport": "DEL",
+            "airportName": "Indira Gandhi International Airport",
+            "city": "New Delhi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "YYZ",
+            "fromName": "Toronto Pearson International Airport",
+            "to": "DEL",
+            "toName": "Indira Gandhi International Airport",
+            "departDate": "2027-01-10",
+            "departTime": "8:40 PM",
+            "arriveDate": "2027-01-11",
+            "arriveTime": "9:50 PM",
+            "durationMin": 880,
+            "aircraft": "Boeing 777",
+            "airline": "AC",
+            "airlineName": "Air Canada",
+            "flightNumber": "42"
+          },
+          {
+            "from": "DEL",
+            "fromName": "Indira Gandhi International Airport",
+            "to": "AMD",
+            "toName": "Sardar Vallabhbhai Patel International Airport",
+            "departDate": "2027-01-12",
+            "departTime": "5:45 AM",
+            "arriveDate": "2027-01-12",
+            "arriveTime": "7:35 AM",
+            "durationMin": 110,
+            "aircraft": "Airbus A321",
+            "airline": "AI",
+            "airlineName": "Air India",
+            "flightNumber": "817"
+          }
+        ],
+        "price": 3396
+      },
+      "inbound": {
+        "key": "AI2938-AC43",
+        "airlines": [
+          "Air India",
+          "Air Canada"
+        ],
+        "from": "AMD",
+        "to": "YYZ",
+        "departDate": "2027-02-06",
+        "departTime": "6:50 PM",
+        "arriveDate": "2027-02-07",
+        "arriveTime": "5:45 AM",
+        "arriveDayOffset": 1,
+        "durationMin": 1285,
+        "stops": 1,
+        "layovers": [
+          {
+            "minutes": 190,
+            "airport": "DEL",
+            "airportName": "Indira Gandhi International Airport",
+            "city": "New Delhi"
+          }
+        ],
+        "legs": [
+          {
+            "from": "AMD",
+            "fromName": "Sardar Vallabhbhai Patel International Airport",
+            "to": "DEL",
+            "toName": "Indira Gandhi International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "6:50 PM",
+            "arriveDate": "2027-02-06",
+            "arriveTime": "8:40 PM",
+            "durationMin": 110,
+            "aircraft": "Airbus A320neo",
+            "airline": "AI",
+            "airlineName": "Air India",
+            "flightNumber": "2938"
+          },
+          {
+            "from": "DEL",
+            "fromName": "Indira Gandhi International Airport",
+            "to": "YYZ",
+            "toName": "Toronto Pearson International Airport",
+            "departDate": "2027-02-06",
+            "departTime": "11:50 PM",
+            "arriveDate": "2027-02-07",
+            "arriveTime": "5:45 AM",
+            "durationMin": 985,
+            "aircraft": "Boeing 777",
+            "airline": "AC",
+            "airlineName": "Air Canada",
+            "flightNumber": "43"
+          }
+        ],
+        "price": 3396
+      },
+      "alternativeReturns": 0,
+      "bookingOptions": [
+        {
+          "seller": "Air Canada",
+          "fare": "Standard",
+          "price": 3396,
+          "isAirline": true,
+          "checkedBags": 1,
+          "refund": "Non-refundable",
+          "changes": "Changes for a fee"
+        },
+        {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 3396,
+          "isAirline": false,
+          "checkedBags": 1,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 3396,
+          "isAirline": false,
+          "checkedBags": 1,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Air Canada",
+          "fare": "Flex",
+          "price": 3656,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": "Partial refund",
+          "changes": "Free changes"
+        },
+        {
+          "seller": "Air Canada",
+          "fare": "Comfort",
+          "price": 3876,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": "Refundable",
+          "changes": "Free changes"
+        },
+        {
+          "seller": "Air Canada",
+          "fare": "Premium Economy Basic",
+          "price": 4951,
+          "isAirline": true,
+          "checkedBags": 1,
+          "refund": "Non-refundable",
+          "changes": "Changes for a fee"
+        },
+        {
+          "seller": "Air Canada",
+          "fare": "Latitude",
+          "price": 6621,
+          "isAirline": true,
+          "checkedBags": 2,
+          "refund": "Refundable",
+          "changes": "Free changes"
+        }
+      ],
+      "bookToken": "W1tbIllZWiIsIjIwMjctMDEtMTAiLCJERUwiLCJBQyIsIjQyIl0sWyJERUwiLCIyMDI3LTAxLTEyIiwiQU1EIiwiQUkiLCI4MTciXV0sW1siQU1EIiwiMjAyNy0wMi0wNiIsIkRFTCIsIkFJIiwiMjkzOCJdLFsiREVMIiwiMjAyNy0wMi0wNiIsIllZWiIsIkFDIiwiNDMiXV1d",
+      "googleBookingUrl": "https://www.google.com/travel/flights/booking?tfs=GlsSCjIwMjctMDEtMTAiHgoDWVlaEgoyMDI3LTAxLTEwGgNERUwqAkFDMgI0MiIfCgNERUwSCjIwMjctMDEtMTIaA0FNRCoCQUkyAzgxN2oFEgNZWVpyBRIDQU1EGlwSCjIwMjctMDItMDYiIAoDQU1EEgoyMDI3LTAyLTA2GgNERUwqAkFJMgQyOTM4Ih4KA0RFTBIKMjAyNy0wMi0wNhoDWVlaKgJBQzICNDNqBRIDQU1EcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD",
+      "baggagePolicyUrls": [
+        {
+          "airline": "AC",
+          "url": "https://www.aircanada.com/ca/en/aco/home/plan/baggage/checked.html"
+        },
+        {
+          "airline": "AI",
+          "url": "https://www.airindia.com/in/en/travel-information/baggage-guidelines.html"
+        }
+      ]
+    },
+    {
       "id": "EY22-3L111_EY241-EY21",
       "airlines": [
         "Etihad",
@@ -658,7 +897,7 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 4132,
+      "googleListedPrice": 3938,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -724,7 +963,7 @@
             "flightNumber": "111"
           }
         ],
-        "price": 4132
+        "price": 3938
       },
       "inbound": {
         "key": "EY241-EY21",
@@ -780,7 +1019,7 @@
             "flightNumber": "21"
           }
         ],
-        "price": 4132
+        "price": 3938
       },
       "alternativeReturns": 0,
       "bookingOptions": [
@@ -861,7 +1100,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 4517,
         "isAirline": false,
@@ -996,7 +1235,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 4517,
           "isAirline": false,
@@ -1005,7 +1244,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 4517,
           "isAirline": false,
