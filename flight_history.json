@@ -1206,5 +1206,21 @@
       "EY22-3L111_EY241-EY21": 4088,
       "QR768-QR534_QR535-QR767": 4517
     }
+  },
+  {
+    "timestamp": "2026-10-10T01:21:58.853Z",
+    "bestPrice": 3011,
+    "bestAirlines": [
+      "Etihad"
+    ],
+    "bestSeller": "wego",
+    "matches": 5,
+    "prices": {
+      "EY22-EY240_EY241-EY21": 3011,
+      "EK242-FZ437_EK541-EK241": 3066,
+      "EK242-EK538_EK541-EK241": 3066,
+      "EY22-3L111_EY241-EY21": 3881,
+      "QR768-QR534_QR535-QR767": 4517
+    }
   }
 ]
