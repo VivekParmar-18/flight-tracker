@@ -1,6 +1,6 @@
 {
-  "id": "1791640953372",
-  "timestamp": "2026-10-10T14:02:32.885Z",
+  "id": "1791658870137",
+  "timestamp": "2026-10-10T19:01:09.803Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -11,14 +11,14 @@
     "dateTo": "2027-02-06",
     "currency": "CAD"
   },
-  "bestPrice": 2906,
+  "bestPrice": 2843,
   "best": {
     "id": "EK242-EK538_EK541-EK241",
     "airlines": [
       "Emirates"
     ],
-    "price": 2906,
-    "seller": "Emirates"
+    "price": 2843,
+    "seller": "FlightHub"
   },
   "options": [
     {
@@ -26,14 +26,14 @@
       "airlines": [
         "Emirates"
       ],
-      "price": 2906,
+      "price": 2843,
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "Emirates",
+        "seller": "FlightHub",
         "fare": null,
-        "price": 2906,
-        "isAirline": true,
+        "price": 2843,
+        "isAirline": false,
         "checkedBags": 2,
         "refund": null,
         "changes": null
@@ -165,6 +165,24 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
+          "seller": "FlightHub",
+          "fare": null,
+          "price": 2843,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
+          "seller": "Justfly.com",
+          "fare": null,
+          "price": 2843,
+          "isAirline": false,
+          "checkedBags": 2,
+          "refund": null,
+          "changes": null
+        },
+        {
           "seller": "Emirates",
           "fare": null,
           "price": 2906,
@@ -174,27 +192,9 @@
           "changes": null
         },
         {
-          "seller": "FlightHub",
-          "fare": null,
-          "price": 3067,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
-          "seller": "Justfly.com",
-          "fare": null,
-          "price": 3067,
-          "isAirline": false,
-          "checkedBags": 2,
-          "refund": null,
-          "changes": null
-        },
-        {
           "seller": "Ovago",
           "fare": null,
-          "price": 3195,
+          "price": 2962,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -203,7 +203,7 @@
         {
           "seller": "AranGrant",
           "fare": null,
-          "price": 3408,
+          "price": 3175,
           "isAirline": false,
           "checkedBags": 2,
           "refund": null,
@@ -445,7 +445,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -581,7 +581,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -590,7 +590,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -666,7 +666,7 @@
         "refund": "Non-refundable",
         "changes": "Changes for a fee"
       },
-      "googleListedPrice": 3396,
+      "googleListedPrice": 4196,
       "direct": {
         "seller": "Air Canada",
         "fare": "Flex",
@@ -740,7 +740,7 @@
             "flightNumber": "817"
           }
         ],
-        "price": 3396
+        "price": 4196
       },
       "inbound": {
         "key": "AI2938-AC43",
@@ -797,7 +797,7 @@
             "flightNumber": "43"
           }
         ],
-        "price": 3396
+        "price": 4196
       },
       "alternativeReturns": 0,
       "bookingOptions": [
