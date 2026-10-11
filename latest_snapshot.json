@@ -1,6 +1,6 @@
 {
-  "id": "1791734415035",
-  "timestamp": "2026-10-11T16:00:14.500Z",
+  "id": "1791748666207",
+  "timestamp": "2026-10-11T19:57:45.994Z",
   "source": "Google Flights (live)",
   "route": {
     "origin": "YYZ",
@@ -19,7 +19,7 @@
       "flydubai"
     ],
     "price": 3067,
-    "seller": "FlightHub"
+    "seller": "Justfly.com"
   },
   "options": [
     {
@@ -32,7 +32,7 @@
       "checkedBags": 2,
       "bagsVerified": true,
       "cheapest": {
-        "seller": "FlightHub",
+        "seller": "Justfly.com",
         "fare": null,
         "price": 3067,
         "isAirline": false,
@@ -168,7 +168,7 @@
       "alternativeReturns": 0,
       "bookingOptions": [
         {
-          "seller": "FlightHub",
+          "seller": "Justfly.com",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -177,7 +177,7 @@
           "changes": null
         },
         {
-          "seller": "Justfly.com",
+          "seller": "FlightHub",
           "fare": null,
           "price": 3067,
           "isAirline": false,
@@ -667,7 +667,7 @@
         "refund": "Non-refundable",
         "changes": "Changes for a fee"
       },
-      "googleListedPrice": 4196,
+      "googleListedPrice": 3396,
       "direct": {
         "seller": "Air Canada",
         "fare": "Flex",
@@ -741,7 +741,7 @@
             "flightNumber": "817"
           }
         ],
-        "price": 4196
+        "price": 3396
       },
       "inbound": {
         "key": "AI2938-AC43",
@@ -798,7 +798,7 @@
             "flightNumber": "43"
           }
         ],
-        "price": 4196
+        "price": 3396
       },
       "alternativeReturns": 0,
       "bookingOptions": [
@@ -898,7 +898,7 @@
         "changes": null
       },
       "cheapestAnyBags": null,
-      "googleListedPrice": 3938,
+      "googleListedPrice": 4132,
       "direct": {
         "seller": "Etihad",
         "fare": null,
@@ -964,7 +964,7 @@
             "flightNumber": "111"
           }
         ],
-        "price": 3938
+        "price": 4132
       },
       "inbound": {
         "key": "EY241-EY21",
@@ -1020,7 +1020,7 @@
             "flightNumber": "21"
           }
         ],
-        "price": 3938
+        "price": 4132
       },
       "alternativeReturns": 0,
       "bookingOptions": [
@@ -1441,33 +1441,7 @@
     2350,
     3250
   ],
-  "reference": {
-    "code": "AI",
-    "name": "Air India",
-    "hub": "DEL",
-    "roundTrip": {
-      "price": 2850,
-      "typicalRange": [
-        2050,
-        2750
-      ],
-      "flights": [
-        "AI 188"
-      ],
-      "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUwaHhIKMjAyNy0wMi0wNjICQUlqBRIDREVMcgUSA1lZWkABSAGYAQE&hl=en&gl=CA&curr=CAD"
-    },
-    "oneWay": {
-      "price": 1929,
-      "typicalRange": [
-        1300,
-        1900
-      ],
-      "flights": [
-        "AI 188"
-      ],
-      "url": "https://www.google.com/travel/flights/search?tfs=Gh4SCjIwMjctMDEtMTAyAkFJagUSA1lZWnIFEgNERUxAAUgBmAEC&hl=en&gl=CA&curr=CAD"
-    }
-  },
+  "reference": null,
   "partial": false,
   "rejectedCount": 0,
   "searchUrl": "https://www.google.com/travel/flights/search?tfs=GhwSCjIwMjctMDEtMTAoAWoFEgNZWVpyBRIDQU1EGhwSCjIwMjctMDItMDYoAWoFEgNBTURyBRIDWVlaQAFIAZgBAQ&hl=en&gl=CA&curr=CAD",
